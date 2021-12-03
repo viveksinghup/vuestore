@@ -1,7 +1,7 @@
 <template>
-  <ul class="text-right p-4 font-semibold bg-gray-100 pr-4">
+  <div class=" p-4 font-semibold bg-pink-800 text-white text-center pr-4">
       hello
-  </ul>
+  </div>
 </template>
 
 <script>
