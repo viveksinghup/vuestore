@@ -1,6 +1,6 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="relative bg-white overflow-hidden">
+  <!-- <div class="relative bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div
         class="
@@ -116,31 +116,7 @@
         alt=""
       />
     </div>
-  </div>
-  <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-  <!--
-  This example requires updating your template:
-
-  ```
-  <html class="h-full bg-gray-50">
-  <body class="h-full">
-  ```
--->
+  </div> -->
   <div
     class="
       min-h-full
@@ -168,11 +144,11 @@
         <input type="hidden" name="remember" value="true" />
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
-            <label for="name" class="sr-only">Name</label>
+            <label for="name" class="sr-only">First Name</label>
             <input
-              id="name"
-              name="name"
-              type="name"
+              id="firstname"
+              name="first name"
+              type="text"
               autocomplete="name"
               required
               class="
@@ -193,7 +169,35 @@
                 focus:z-10
                 sm:text-sm
               "
-              placeholder="Name"
+              placeholder="First Name"
+            />
+          </div>
+          <div>
+            <label for="lastname" class="sr-only">Last Name</label>
+            <input
+              id="lastname"
+              name="last name"
+              type="text"
+              autocomplete="last name"
+              required
+              class="
+                appearance-none
+                rounded-none
+                relative
+                block
+                w-full
+                px-3
+                py-2
+                border border-gray-300
+                placeholder-gray-500
+                text-gray-900
+                focus:outline-none
+                focus:ring-indigo-500
+                focus:border-indigo-500
+                focus:z-10
+                sm:text-sm
+              "
+              placeholder="Last Name"
             />
           </div>
           <div>
