@@ -3,10 +3,16 @@
     <h1 class="text-pink-600 font-bold font-sans text-4xl text-center">Home</h1>
     <div class="h-0.5 bg-gray-200 w-36 mx-auto mt-2.5"></div>
   </div>
+  <ContactUs></ContactUs>
 </template>
 
 <script>
-export default {};
+import ContactUs from './pages/ContactUs.vue'
+export default {
+  components: {
+    ContactUs
+  }
+};
 </script>
 
 <style>
