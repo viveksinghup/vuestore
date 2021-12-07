@@ -1,5 +1,5 @@
 <template>
-  <div class=" p-4 font-semibold bg-pink-800 text-white text-center pr-4">
+  <div class=" p-4 bg-brandBlue text-white text-center pr-4">
        <router-link class="mx-2" to="/">Home</router-link>
        <router-link class="mx-2" to="/about">About</router-link>
        <router-link class="mx-2" to="/services">Services</router-link>

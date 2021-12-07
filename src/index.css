@@ -2,3 +2,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("Oakes Grotesk"), url("../public/fonts/Oakes Grotesk Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("Oakes Grotesk"), url("../public/fonts/Oakes Grotesk Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("Oakes Grotesk"), url("../public/fonts/Oakes Grotesk Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("Oakes Grotesk"), url("../public/fonts/Oakes Grotesk SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oakes Grotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("Oakes Grotesk"), url("../public/fonts/Oakes Grotesk Bold.ttf") format("truetype");
+}
+
+body {
+    font-family: Oakes Grotesk, sans-serif;
+}
