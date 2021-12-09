@@ -2,7 +2,6 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/components/pages/Home.vue";
 import About from "@/components/pages/About.vue";
 import Services from "@/components/pages/Services.vue";
-import Products from "@/components/pages/Products.vue";
 import Contact from "@/components/pages/ContactUs.vue";
 import NotFound from "@/components/pages/NotFound.vue";
 
@@ -21,11 +20,6 @@ import NotFound from "@/components/pages/NotFound.vue";
     path: "/services",
     name: "Services",
     component: Services,
-  },
-  {
-    path: "/products",
-    name: "Products",
-    component: Products,
   },
   {
     path: "/contact-us",
