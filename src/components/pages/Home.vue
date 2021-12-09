@@ -1,7 +1,7 @@
 <template>
   <div class="bg-opacity-40 bg-gray10">
     <div class="container mx-auto px-4">
-      <div class="flex py-28">
+      <div class="flex pt-48 pb-28">
         <div
           class="
             flex
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="lg:w-1/2">
+        <div class="lg:w-1/2 pl-32">
           <div class=" w-80 h-full bg-darkBlue"></div>
         </div>
       </div>
