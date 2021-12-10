@@ -41,6 +41,41 @@
       </div>
     </div>
   </div>
+
+  <section>
+    <div class="container mx-auto px-32 py-10 my-10">
+      <div class="flex flex-col items-left">
+        <div class="text-5xl font-medium">Our Services</div>
+        <!-- <div class="h-0.5 w-20 bg-black mt-5 mb-4"></div> -->
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <span class="border-t-2 border-black"></span>
+        <p class="font-medium px-20 font-medium">
+          Bringing you the finest facility management solutions for a better and healthier working environment with our expertise and experience.
+        </p>
+      </div>
+      
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-10">
+
+        <div  v-for="(data,index) in services" :key="index"
+        class="flex flex-col items-center justify-center bg-opacity-20 bg-gray10 px-10 py-5 shadow rounded-lg">
+          
+          <div class="flex items-center text-left  ">
+             <h2 class="flex flex-col font-bold p-2 text-xl mr-1">0{{index}}</h2> 
+            <div class="flex flex-col">
+              <h2 class="mt-4 font-bold text-xl">{{data.title}}</h2>
+            </div>
+          </div>
+          <div class="h-1 w-16 bg-darkBlue mt-1 mb-2 "></div>
+          <p class="text-xs text-gray-500 text-left mt-3">{{data.description}}</p>
+        </div>
+
+		</div>
+    </div>
+  </section>
+ 
+
   <div class="my-20 relative overflow-hidden">
     <div class="container mx-auto md:px-20">
       <div class="flex md:flex-row items-center flex-col">
@@ -68,24 +103,6 @@
         text-white
       "
     ></div>
-  </div>
-  <div
-    class="
-      container
-      mx-auto
-      px-4
-      border-t border-gray10 border-opacity-50
-      py-10
-      my-10
-    "
-  >
-    <div class="flex flex-col items-center">
-      <div class="text-4xl font-medium">Our Clients</div>
-      <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
-    </div>
-    <div class="flex justify-center">
-      <img src="@/assets/images/clients.png" />
-    </div>
   </div>
   <section>
      <div class="my-20 relative overflow-hidden">
@@ -129,7 +146,7 @@
   </div>
   </section>
   <section>
-     <div class="my-20 bg-black relative overflow-hidden">
+     <div class="mt-20 bg-black relative overflow-hidden">
       <div class="container mx-auto px-4">
         <div class="flex pt-48 pb-48 items-center text-white">
           <div class="lg:w-1/2 pl-32">
@@ -161,6 +178,56 @@
   <section>
     <img src="@/assets/images/home-coverimg.png" class="w-full h-auto" />
   </section>
+  
+  <section>
+    <div class="container mx-auto px-32 py-10 my-20">
+    <div class="flex flex-col items-center px-40">
+      <div class="text-xl">
+        <blockquote class="relative text-left p-10 w-full m-1">
+       The FM industry is dynamically changing with unpredictable fluctuations and advancing technologies. The need for facility management has surged with the need for a virus-free and healthy ambience.
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  </section>
+ 
+ <!-- Our Clients -->
+  <section>
+    <div class="container mx-auto px-4 border-t border-gray10 border-opacity-50 py-10 my-10">
+    <div class="flex flex-col items-center">
+      <div class="text-4xl font-medium">Our Clients</div>
+      <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
+    </div>
+    <div class="flex justify-center">
+      <img src="@/assets/images/clients.png" />
+    </div>
+  </div>
+  </section>
+ 
+  <section>
+    <div class="bg-opacity-20 bg-gray10">
+    <div class="container mx-auto px-4">
+      <div class="flex px-32 py-20">
+        <div class="flex items-center text-center lg:text-left lg:w-1/2 pr-20">
+          <div>
+            <h2 class="text-4xl md:text-6xl">
+              Business Segments We Operate In
+            </h2>
+            <div class="h-2 w-16 bg-darkBlue mt-5 mb-4"></div>
+            <div class="mt-2 text-sm md:text-lg">
+              We offer extensive facility management services in different industry segments. 
+              Our facility engineers are competently trained and experienced in providing 
+              cost-effective solutions while adhering to all the necessary regulations and mitigating the risk of unforeseen losses.
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="w-100 h-full bg-darkBlue"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 </template>
 
 <script>
@@ -175,7 +242,29 @@ export default {
          'Our employees/staff go through rigorous training before they are assigned to any project.',
          'We believe in a better tomorrow therefore, we use sustainable technology, tools & equipment in the delivery of soft services.',
          'We offer customized and innovative solutions to reach beyond your expectations.'
-       ]
+       ],
+       services:[
+         {
+           title:'TECHNICAL SOLUTIONS',
+           description:'We offer a whole range of Electromechanical, Maintenance and Repair solutions. Our competently trained staff provides regular and meticulous system check-ups, with performance evaluation and tech updates to optimise and ensure there is no productivity loss.'
+         },
+         {
+           title:'SOFT SERVICE SOLUTIONS',
+           description:'We employ a combination of Mechanised + Manpower led housekeeping strategies to beautify your facility. Our solution architects curate customized and cost-effective housekeeping and maintenance strategies to help you keep your vicinity hygienic, clean and green.'
+         },
+         {
+           title:'PEST MANAGEMENT SOLUTIONS',
+           description:'Our pest management solutions are aimed at eliminating the population of insects that are considered detrimental to humans, your facility and the environment by using green methods to ensure quality, health and safety regulations.'
+         },
+         {
+           title:'SECURITY SOLUTIONS',
+           description:'We have one of the best-trained security personnel in the industry with keen observation skills and a wide range of security solutions and access control systems. We offer fully-customized security services to schools, government buildings, public centres, retail stores, commercial and residential buildings, hotels, etc.'
+         },
+         {
+           title:'SPECIALISED SERVICES SOLUTIONS',
+           description:'Our extensive specialized solutions are exclusively designed to meet your short-term facility needs. We offer one-time Project and Façade cleaning services, and Vendor management, Help-desk management, Staffing and Payroll solutions.'
+         }
+      ]  
      }
   },
   components: {
@@ -188,4 +277,16 @@ export default {
 .form-heading {
   line-height: 60px;
 }
+
+blockquote {
+		background:
+			linear-gradient(to right, #012B6D 6px, transparent 4px) 0 100%,
+			linear-gradient(to left, #012B6D 6px, transparent 4px) 100% 0,
+			linear-gradient(to bottom, #012B6D 6px, transparent 4px) 100% 0,
+			linear-gradient(to top, #012B6D 6px, transparent 4px) 0 100%;
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+}
+
+	
 </style>
