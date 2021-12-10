@@ -96,7 +96,7 @@
         </div>
         <div class="flex items-center text-center lg:text-left lg:w-1/2 pr-20">
           <div>
-            <div class="text-3xl ">
+            <div class="text-3xl">
               Customer-centric solutions by Maven are powered by our experience + expertise approach, a unique combination of best industry practices with specialized solutions. Our solution driven methodology delivers increased productivity and provides the right ambiance for employees, visitors, and potential clients.
             </div>
             <div class="flex justify-center lg:justify-start mt-6">
