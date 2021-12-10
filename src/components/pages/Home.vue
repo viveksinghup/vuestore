@@ -104,6 +104,6 @@ export default {
 
 <style lang="postcss" scoped>
 .form-heading {
-  line-height: 60px;
+  line-height: 62px;
 }
 </style>
