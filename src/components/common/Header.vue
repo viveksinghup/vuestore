@@ -1,5 +1,10 @@
 <template>
-  <div class="border-b border-gray30 border-opacity-30 bg-opacity-40 bg-gray10">
+  <div
+    class="border-b border-gray10 border-opacity-100 z-10"
+    :class="`bg-white flex header transition ${
+      isMenuVisible ? 'header--visible' : 'header--hidden'
+    }`"
+  >
     <nav class="container px-4 mx-auto">
       <div class="md:flex items-center justify-between py-2">
         <div class="flex justify-between items-center">
@@ -8,7 +13,11 @@
               ><img src="@/assets/images/MAVEN.png" class="w-full h-16"
             /></a>
           </div>
-          <div class="md:hidden">
+          <div
+            class="md:hidden"
+            :class="{ active: isHamburgerOpen }"
+            @click="isHamburgerOpen = !isHamburgerOpen"
+          >
             <button
               type="button"
               class="
@@ -30,7 +39,10 @@
             </button>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row md:space-x-12 md:block">
+        <div
+          class="flex flex-col md:flex-row md:space-x-12 md:block"
+          :class="{ active: isHamburgerOpen }"
+        >
           <router-link
             class="
               link
@@ -81,13 +93,45 @@
 <script>
 export default {
   name: "Navbar",
-  props: {
-    links: [String],
+  data: () => ({
+    isMenuVisible: true,
+    isHamburgerOpen: false,
+    lastScrollPosition: 0,
+  }),
+  watch: {
+    isHamburgerOpen(isOpen) {
+      document.body.classList[isOpen ? "add" : "remove"]("overflow-y-hidden");
+    },
+  },
+  methods: {
+    onScroll() {
+      // Get the current scroll position
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      // this.isMenuVisible = currentScrollPosition > 90
+      if (currentScrollPosition > 90) {
+        this.isMenuVisible = currentScrollPosition < this.lastScrollPosition;
+      } else {
+        this.isMenuVisible = true;
+      }
+      this.lastScrollPosition = currentScrollPosition;
+    },
+  },
+  mounted() {
+    if (process.browser) {
+      window.addEventListener("scroll", this.onScroll);
+    }
+  },
+  beforeUnmount() {
+    if (process.browser) {
+      window.removeEventListener("scroll", this.onScroll);
+    }
   },
 };
 </script>
 
 <style lang="postcss" scoped>
+
 .link:after {
   content: "";
   position: absolute;
@@ -106,5 +150,20 @@ export default {
   .router-link-active:after {
     width: 0px;
   }
+}
+.header {
+  background-color: #dfdfdf;
+  @apply fixed top-0 left-0 right-0 transition;
+}
+@screen md {
+  .header li > a {
+    padding-top: 4px;
+  }
+}
+.header--visible {
+  transform: translateY(0);
+}
+.header--hidden {
+  transform: translateY(-100%);
 }
 </style>

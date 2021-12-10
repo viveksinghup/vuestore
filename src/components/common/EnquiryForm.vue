@@ -1,45 +1,235 @@
 <template>
-    <!-- a lot of the lines are just svg text, actual html is simple 
-A sample contact us page form written with tailwind css
-Illustration from undraw.co by the amazing Katerina Limpitsouni
--->
-<div class="bg-gray-800 text-gray-100 px-8 py-12">
-      <div
-        class="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
-        <div class="flex flex-col justify-between">
-          <div>
-            <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Enquiry Form!</h2>
-            <div class="text-gray-700 mt-8">
-              Hate forms? Send us an <span class="underline">email</span> instead.
-            </div>
-          </div>
-          <div class="mt-8 text-center">
-            <img src="@/assets/images/contact-us.svg"/>
-          </div>
-        </div>
-        <div class="">
-          <div>
-            <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="">
-          </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
-            <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text">
-          </div>
-          <div class="mt-8">
-            <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
-            <textarea
-              class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-          </div>
-          <div class="mt-8">
-            <button
-              class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
-              Send Message
-            </button>
-          </div>
-        </div>
+  <div
+    class="
+      mx-auto
+      max-w-md
+      px-10
+      py-12
+      bg-white
+      border-0
+      shadow-lg
+      sm:rounded-3xl
+    "
+  >
+    <h1 class="text-2xl font-medium mb-8">Get In Touch</h1>
+    <form id="form" novalidate>
+      <div class="relative z-0 w-full mb-8">
+        <input
+          type="text"
+          name="name"
+          placeholder=" "
+          required
+          class="
+            pt-3
+            pb-2
+            block
+            w-full
+            px-0
+            mt-0
+            bg-transparent
+            border-0 border-b
+            appearance-none
+            focus:outline-none focus:ring-0 focus:border-black
+            border-gray20
+          "
+        />
+        <label
+          for="name"
+          class="absolute duration-300 top-3 -z-1 font-light origin-0 text-gray50"
+          >Name</label
+        >
+        <span class="text-sm text-red-600 font-light hidden" id="error"
+          >Name is required</span
+        >
       </div>
-    </div>
+
+      <div class="relative z-0 w-full mb-8">
+        <input
+          type="email"
+          name="email"
+          placeholder=" "
+          class="
+            pt-3
+            pb-2
+            block
+            w-full
+            px-0
+            mt-0
+            bg-transparent
+            border-0 border-b
+            appearance-none
+            focus:outline-none focus:ring-0 focus:border-black
+            border-gray20
+          "
+        />
+        <label
+          for="email"
+          class="absolute duration-300 top-3 -z-1 font-light origin-0 text-gray50"
+          >Enter Email Address*</label
+        >
+        <span class="text-sm text-red-600 font-light hidden" id="error"
+          >Email address is required</span
+        >
+      </div>
+      <div class="relative z-0 w-full mb-8">
+        <input
+          type="number"
+          name="phone"
+          placeholder=" "
+          class="
+            pt-3
+            pb-2
+            block
+            w-full
+            px-0
+            mt-0
+            bg-transparent
+            border-0 border-b
+            appearance-none
+            focus:outline-none focus:ring-0 focus:border-black
+            border-gray20
+          "
+        />
+        <label
+          for="email"
+          class="absolute duration-300 font-light top-3 -z-1 origin-0 text-gray50"
+          >Phone Number*</label
+        >
+        <span class="text-sm text-red-600 font-light hidden" id="error"
+          >Phone is required</span
+        >
+      </div>
+      <div class="relative z-0 w-full mb-8">
+        <input
+          type="email"
+          name="email"
+          placeholder=" "
+          class="
+            pt-3
+            pb-2
+            block
+            w-full
+            px-0
+            mt-0
+            bg-transparent
+            border-0 border-b
+            appearance-none
+            focus:outline-none focus:ring-0 focus:border-black
+            border-gray20
+          "
+        />
+        <label
+          for="email"
+          class="absolute duration-300 top-3 font-light -z-1 origin-0 text-gray50"
+          >Area of Interest</label
+        >
+        <span class="text-sm text-red-600 font-light hidden" id="error"
+          >Interest is required</span
+        >
+      </div>
+      <div class="relative z-0 w-full mb-8">
+        <textarea
+          type="email"
+          name="email"
+          placeholder=" "
+          class="
+            pt-3
+            pb-2
+            block resize-none
+            w-full
+            px-0
+            mt-0
+            bg-transparent
+            border-0 border-b
+            appearance-none
+            focus:outline-none focus:ring-0 focus:border-black
+            border-gray20
+          "
+        />
+        <label
+          for="email"
+          class="absolute duration-300 top-3 font-light -z-1 origin-0 text-gray50"
+          >Message</label
+        >
+        <span class="text-sm text-red-600 font-light hidden" id="error"
+          >Message</span
+        >
+      </div>
+
+      <fieldset class="relative z-0 w-full p-px mt-10">
+        <div class="block pt-3 pb-2 space-x-4 text-gray50">
+          <label class="text-xs">
+            <input
+              type="checkbox"
+              name="radio"
+              value="1"
+              class="
+                mr-2
+                border-2 border-gray-300
+                focus:border-gray-300 focus:ring-black
+              "
+            />
+            Option 1
+          </label>
+        </div>
+      </fieldset>
+
+      <button
+        id="button"
+        type="button"
+        class="
+          w-full
+          px-6
+          py-4
+          mt-5
+          text-lg text-white
+          transition-all
+          duration-150
+          ease-linear
+          shadow-md
+          outline-none bg-brandBlue hover:bg-darkBlue
+          hover:shadow-lg
+          focus:outline-none
+        "
+      >
+        Submit
+      </button>
+    </form>
+  </div>
 </template>
+<style lang="postcss" scoped>
+.-z-1 {
+    z-index: -1;
+  }
+
+  .origin-0 {
+    transform-origin: 0%;
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label,
+  textarea:focus ~ label,
+  textarea:not(:placeholder-shown) ~ label,
+  select:focus ~ label,
+  select:not([value='']):valid ~ label {
+    /* @apply transform; scale-75; -translate-y-6; */
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-scale-x: 0.75;
+    --tw-scale-y: 0.75;
+    --tw-translate-y: -1.5rem;
+  }
+
+  input:focus ~ label,
+  select:focus ~ label {
+    /* @apply text-black; left-0; */
+    --tw-text-opacity: 1;
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+    left: 0px;
+  }
+</style>
