@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-b border-gray30 border-opacity-30 bg-opacity-40 bg-gray10"
+    class="border-b border-gray10 border-opacity-100 z-10"
     :class="`bg-white flex header transition ${
       isMenuVisible ? 'header--visible' : 'header--hidden'
     }`"
@@ -131,6 +131,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+
 .link:after {
   content: "";
   position: absolute;
@@ -151,6 +152,7 @@ export default {
   }
 }
 .header {
+  background-color: #dfdfdf;
   @apply fixed top-0 left-0 right-0 transition;
 }
 @screen md {
