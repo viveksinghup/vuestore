@@ -1,12 +1,70 @@
 <template>
-  <div class="w-100 bg-darkBlue text-white">
-      <h4 class="text-center py-5">Footer © 2021</h4>
+  <div class="bg-gray-100 px-27 my-20">
+   <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+      <div class="p-5 w-96 ">
+         <div class="text-xs">
+           <img src="@/assets/images/Footer-logo.svg" class="" />
+         </div>
+         <a class="my-3 block" href="/#"></a>
+         <a class="my-3 block" href="/#">Your Facility Experts</a>
+      </div>
+      <div class="p-5 w-48 ">
+         <div class="text-lg  text-gray-500 font-semibold">About Maven</div>
+         <a v-for="(data,index) in footerCol1" :key="index" 
+         class="my-3 block text-sm" href="/#">{{data}}</a>
+      </div>
+      <div class="p-5 w-48 ">
+         <div class="text-lg  text-gray-500 font-semibold">Services</div>
+          <a v-for="(data,index) in footerCol2" :key="index" 
+          class="my-3 block text-sm" href="/#">{{data}}</a>
+      </div>
+      <div class="p-5 w-40 ">
+         <div class="text-lg  text-gray-500 font-semibold">Articles</div>
+        <a v-for="(data,index) in footerCol3" :key="index"
+         class="my-3 block text-sm" href="/#">{{data}}</a>
+      </div>
+      <div class="p-5 w-56 ">
+         <div class="text-lg text-gray-500 font-semibold">Contact Us</div>
+         <a class="my-3 block text-sm" href="/#">Maven Facility Management Pvt. Ltd. <br><br> Plot No 84 & 85, VK Towers, 2nd Floor, Kavuri Hills Ext., Near IDFC Bank, Guttala Begumpet, Madhapur, Hyderabad 500081 Ph : +91 9100114610</a><a class="my-3 block" href="/#">contact@company.com</a> 
+      </div>
+   </div>
+</div>
+<div class="bg-gray-100 px-27 py-5 bg-darkBlue text-white">
+    <div class="grid grid-cols-3 gap-4 max-w-6xl m-auto">
+      <h4 class="text-left"> ©2021 Maven Facility Management Pvt. Ltd.</h4>
+      <h4 class="text-center">Disclaimer</h4>
+      <h4 class="text-right">Website by- <span class="text-bold">SocialCulture</span></h4>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    data(){
+      return{
+        footerCol1:[
+            'Profile',
+            'Our Edge',
+            'Vision & Mission',
+            'Values', 
+            'Leadership Team', 
+            'Accreditations'
+        ],
+        footerCol2:[
+            'Technical Solutions',
+            'Soft Service Solutions',
+            'Pest Management Solutions',
+            'Security Solutions', 
+            'Specialised and Additional Service Solutions', 
+        ],
+        footerCol3:[
+            'Clientele',
+            'Blogs',
+            'FAQ`s',
+        ],
+      }
+    }
 }
 </script>
 
