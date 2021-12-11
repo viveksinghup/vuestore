@@ -48,7 +48,6 @@
               link
               font-semibold
               py-4
-              border-b border-gray10
               md:border-none md:py-0
               relative
             "
@@ -60,7 +59,6 @@
               link
               font-semibold
               py-4
-              border-b border-gray10
               md:border-none md:py-0
               relative
             "
@@ -72,7 +70,6 @@
               link
               font-semibold
               py-4
-              border-b border-gray10
               md:border-none md:py-0
               relative
             "
@@ -80,7 +77,7 @@
             >Services</router-link
           >
           <router-link
-            class="link font-semibold py-4 border-b md:py-0 relative"
+            class="link font-semibold py-4 border-none md:py-0 relative"
             to="/contact-us"
             >Contact Us</router-link
           >
