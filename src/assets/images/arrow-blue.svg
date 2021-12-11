@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50">
+  <g id="Group_90" data-name="Group 90" transform="translate(3751 465)">
+    <rect id="Rectangle_25" data-name="Rectangle 25" width="51" height="50" rx="25" transform="translate(-3751 -465)" fill="#013cac"/>
+    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M8.225,3.91l.959-.959a1.032,1.032,0,0,1,1.464,0l8.394,8.39a1.032,1.032,0,0,1,0,1.464L10.648,21.2a1.032,1.032,0,0,1-1.464,0l-.959-.959a1.037,1.037,0,0,1,.017-1.481l5.2-4.957H1.036A1.034,1.034,0,0,1,0,12.766V11.384a1.034,1.034,0,0,1,1.036-1.036H13.446l-5.2-4.957A1.03,1.03,0,0,1,8.225,3.91Z" transform="translate(-3735 -451.647)" fill="#fff"/>
+  </g>
+</svg>
