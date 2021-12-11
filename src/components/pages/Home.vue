@@ -1,13 +1,17 @@
 <template>
   <div class="bg-opacity-50 bg-gray10">
     <div class="container mx-auto px-4">
-      <div class="flex pt-48 pb-28 px-20">
-        <div class="flex items-center text-center lg:text-left lg:w-1/2 pr-20">
+      <div
+        class="flex flex-col md:flex-row pt-32 md:pt-48 pb-16 md:pb-28 px-20"
+      >
+        <div
+          class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
+        >
           <div>
             <h2 class="text-4xl font-semibold md:text-7xl">
               Your Facility Experts
             </h2>
-            <div class="h-2 w-16 bg-darkBlue mt-5 mb-4"></div>
+            <div class="h-2 md:w-16 bg-darkBlue mt-5 mb-4"></div>
             <div class="mt-2 text-sm md:text-lg">
               We are a full-fledged facility management company based in India.
               Our offerings include comprehensive facility management solutions
@@ -44,12 +48,22 @@
 
   <section>
     <div class="container mx-auto md:px-16 py-10 my-10">
-      <div class="flex flex-col md:flex-row">
-        <div class="flex flex-col items-left w-1/2">
-          <div class="text-5xl font-medium">Our Services</div>
-          <div class="h-0.5 w-96 bg-black mt-6 mb-4"></div>
+      <div class="flex flex-col text-center md:text-left md:flex-row">
+        <div class="flex flex-col items-left md:w-1/2">
+          <div class="text-2xl md:text-5xl font-medium">Our Services</div>
+          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
         </div>
-        <div class="px-20 w-2/3 flex-shrink-0 text-2xl mt-20">
+        <div
+          class="
+            px-20
+            md:w-2/3
+            flex-shrink-0
+            text-lg
+            md:text-2xl
+            mt-10
+            md:mt-20
+          "
+        >
           Bringing you the finest facility management solutions for a better and
           healthier working environment with our expertise and experience.
         </div>
@@ -94,11 +108,17 @@
     <div class="container mx-auto md:px-20">
       <div class="flex md:flex-row items-center flex-col">
         <div class="md:w-1/2">
-          <div class="text-5xl md:pr-32 form-heading">
+          <div
+            class="
+              text-2xl text-center
+              md:text-left md:text-5xl md:pr-32
+              form-heading mb-10 md:mb-0
+            "
+          >
             Get a free consultation from top industry professionals and manage
             your facility with ease and perfection.
           </div>
-          <div class="h-2 w-16 bg-darkBlue mt-5 mb-4"></div>
+          <div class="h-2 w-16 hidden md:flex bg-darkBlue mt-5 mb-4"></div>
         </div>
         <div class="md:w-1/2">
           <EnquiryForm></EnquiryForm>
@@ -125,15 +145,15 @@
   <section>
     <div class="my-20 relative overflow-hidden">
       <div class="container mx-auto px-4">
-        <div class="flex pt-48 pb-28">
+        <div class="flex flex-col md:flex-row mt-10 md:pt-48 pb-20 md:pb-28">
           <div class="lg:w-1/2 pl-32">
             <div class="w-80 h-full bg-darkBlue"></div>
           </div>
           <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 pr-20"
+            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
           >
             <div>
-              <div class="text-3xl">
+              <div class="text-xl md:text-3xl">
                 Customer-centric solutions by Maven are powered by our
                 experience + expertise approach, a unique combination of best
                 industry practices with specialized solutions. Our solution
@@ -183,24 +203,24 @@
   <section>
     <div class="mt-20 bg-black relative overflow-hidden">
       <div class="container mx-auto px-4">
-        <div class="flex pt-48 pb-48 items-center text-white">
-          <div class="lg:w-1/2 pl-32">
-            <div class="flex items-center lg:text-left pr-20">
+        <div class="flex flex-col md:flex-row py-20 md:py-48 items-center text-white">
+          <div class="lg:w-1/2 md:pl-32">
+            <div class="flex items-center lg:text-left md:pr-20">
               <div>
-                <h2 class="text-4xl font-semi md:text-7xl">
+                <h2 class="text-2xl font-semi md:text-7xl mb-10 md:mb-0">
                   Why Choose Maven For Your Facility Needs?
                 </h2>
-                <div class="h-2 w-24 bg-brandBlue mt-5 mb-4"></div>
+                <div class="h-2 hidden md:block w-24 bg-brandBlue mt-5 mb-4"></div>
               </div>
             </div>
           </div>
           <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 pr-32"
+            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-32"
           >
             <div>
-              <ul class="list list-outside space-y-10">
+              <ul class="list list-outside space-y-5 md:space-y-10">
                 <li
-                  class="flex items-center"
+                  class="flex md:items-center"
                   v-for="(data, index) in textList"
                   :key="index"
                 >
@@ -218,7 +238,7 @@
                       fill="#ffcd28"
                     />
                   </svg>
-                  <p class="ml-4">{{ data }}</p>
+                  <p class="ml-4 text-left">{{ data }}</p>
                 </li>
               </ul>
             </div>
@@ -232,9 +252,9 @@
   </section>
 
   <section>
-    <div class="container mx-auto px-20 py-10 my-20">
-      <div class="flex flex-col items-center px-40">
-        <div class="relative text-4xl text-left p-10 w-full m-1">
+    <div class="container mx-auto md:px-20 py-10 my-20">
+      <div class="flex flex-col items-center px-10 md:px-40">
+        <div class="relative text-2xl md:text-4xl text-left p-10 w-full m-1">
           <img
             src="@/assets/images/arrow-blue.svg"
             class="w-8 absolute -m-8 -mt-10 my-6"
@@ -278,10 +298,10 @@
             class="flex items-center text-center lg:text-left lg:w-1/2 pr-20"
           >
             <div>
-              <h2 class="text-4xl md:text-6xl">
+              <h2 class="text-2xl md:text-6xl">
                 Business Segments We Operate In
               </h2>
-              <div class="h-2 w-16 bg-darkBlue mt-5 mb-4"></div>
+              <div class="h-2 w-16 hidden md:block bg-darkBlue mt-5 mb-4"></div>
               <div class="mt-2 text-sm md:text-lg">
                 We offer extensive facility management services in different
                 industry segments. Our facility engineers are competently
@@ -356,5 +376,10 @@ export default {
 <style lang="postcss" scoped>
 .form-heading {
   line-height: 62px;
+}
+@media screen and (max-width: 800px) {
+  .form-heading {
+    line-height: 32px;
+  }
 }
 </style>
