@@ -169,8 +169,8 @@
                 focus:border-gray-300 focus:ring-black
               "
             />
-            Option 1
           </label>
+            I agree to receive updates on the latest trends, best practices and services offered by Maven.
         </div>
       </fieldset>
 
