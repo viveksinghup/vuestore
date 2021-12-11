@@ -15,8 +15,6 @@
           </div>
           <div
             class="md:hidden"
-            :class="{ active: isHamburgerOpen }"
-            @click="isHamburgerOpen = !isHamburgerOpen"
           >
             <button
               type="button"
@@ -26,6 +24,8 @@
                 hover:text-gray-700
                 focus:text-gray-700 focus:outline-none
               "
+              :class="{ active: isHamburgerOpen }"
+            @click="isHamburgerOpen = !isHamburgerOpen"
             >
               <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
                 <path
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row md:space-x-12 md:block"
+          class="flex flex-col md:flex-row md:space-x-12 md:block mob-link"
           :class="{ active: isHamburgerOpen }"
         >
           <router-link
@@ -162,5 +162,9 @@ export default {
 }
 .header--hidden {
   transform: translateY(-100%);
+}
+@media screen and (max-width: 800px) {
+  .mob-link{display: none;}
+  .mob-link.active{display: flex;}
 }
 </style>
