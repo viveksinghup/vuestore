@@ -90,7 +90,7 @@
                 0{{ index }}
               </h2>
               <h2 class="mt-4 font-bold text-xl">{{ data.title }}</h2>
-            </div>
+            </div>ser
             <div class="h-1 w-20 bg-darkBlue mt-4 mb-4"></div>
             <p class="text-gray-500 text-left mt-3">
               {{ data.description }}
