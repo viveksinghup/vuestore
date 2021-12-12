@@ -91,6 +91,57 @@
    <section>
     <img src="@/assets/images/businessman.png" class="w-full h-auto" />
   </section>
+  <section>
+    <div class="container mx-auto md:px-16 py-20">
+      <div class="flex flex-col text-center md:text-left md:flex-row">
+        <div class="flex flex-col items-left md:w-1/2">
+          <div class="text-2xl md:text-5xl font-medium">Mission</div>
+          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+        </div>
+        <div
+          class="
+            px-20
+            md:w-2/3
+            flex-shrink-0
+            text-lg
+            md:text-2xl
+            mt-20
+            md:mt-20
+          "
+        >
+        <p>
+        Our mission is to contribute to the environment while providing our clients with the best customised FM solutions and delivering excellence in our services and after-service support.  \
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mx-auto md:px-16 py-20">
+      <div class="flex flex-col text-center md:text-left md:flex-row">
+        <div class="flex flex-col items-left md:w-1/2">
+          <div class="text-2xl md:text-5xl font-medium">Vision</div>
+          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+        </div>
+        <div
+          class="
+            px-20
+            md:w-2/3
+            flex-shrink-0
+            text-lg
+            md:text-2xl
+            mt-20
+            md:mt-20
+          "
+        >
+        <p>
+        To provide the best customer services in the integrated facility management space and create a convenient and technologically advanced ambience incorporating sustainable solutions.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </template>
 

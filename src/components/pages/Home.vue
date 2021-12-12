@@ -109,11 +109,8 @@
       <div class="flex md:flex-row items-center flex-col">
         <div class="md:w-1/2">
           <div
-            class="
-              text-2xl text-center
-              md:text-left md:text-5xl md:pr-32
-              form-heading mb-10 md:mb-0
-            "
+            class=" text-2xl text-center md:text-left md:text-5xl md:pr-32 
+            form-heading mb-10 md:mb-0"
           >
             Get a free consultation from top industry professionals and manage
             your facility with ease and perfection.
