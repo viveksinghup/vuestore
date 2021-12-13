@@ -275,7 +275,7 @@
           <div class="flex-1 w-32 border border-gray10 border-opacity-20 py-10">
             <div class="items-center">
               <div class="text-center px-20">
-                 <img  src="@/assets/images/QA-Technic-Logo.png"/> 
+                 <img class="mx-auto" src="@/assets/images/QA-Technic-Logo.png"/> 
               </div>
               <div class="px-20 text-center">
                 <div class="items-center ">
@@ -290,7 +290,7 @@
           <div class="flex-1 w-32 border border-gray10 border-opacity-20 py-10">
             <div class="items-center">
               <div class="text-center px-20">
-                <img src="@/assets/images/logo2.png"/> 
+                <img class="mx-auto" src="@/assets/images/logo2.png"/> 
               </div>
                <div class="px-20 text-center">
                 <div class="items-center ">
@@ -305,7 +305,7 @@
           <div class="flex-1 w-32 border border-gray10 border-opacity-20 py-10">
             <div class="items-center">
               <div class="text-center px-20">
-              <img  src="@/assets/images/logo2.png"/> 
+              <img class="mx-auto" src="@/assets/images/logo2.png"/> 
               </div>
                <div class="px-20 text-center">
                 <div class="items-center ">
