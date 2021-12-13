@@ -1,6 +1,7 @@
 <template>
-  <div class="bg-black">
-    <div class="container mx-auto px-4">
+  <section>
+    <div class="bg-black">
+    <div class="container mx-auto ">
       <div
         class="flex flex-col md:flex-row pt-32 md:pt-48 pb-16 md:pb-28 px-20"
       >
@@ -20,6 +21,7 @@
       </div>
     </div>
   </div>
+  </section>
 
   <section class="bg-darkBlue">
     <div class="container bg-darkBlue text-white mx-auto md:px-16 py-10">
