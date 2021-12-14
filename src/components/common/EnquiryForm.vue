@@ -17,6 +17,7 @@
         <input
           type="text"
           name="name"
+          v-model="data.name"
           placeholder=" "
           required
           class="
@@ -47,6 +48,7 @@
         <input
           type="email"
           name="email"
+          v-model="data.email"
           placeholder=" "
           class="
             pt-3
@@ -75,6 +77,7 @@
         <input
           type="number"
           name="phone"
+          v-model="data.phone"
           placeholder=" "
           class="
             pt-3
@@ -104,6 +107,7 @@
           type="email"
           name="email"
           placeholder=" "
+          v-model="data.area"
           class="
             pt-3
             pb-2
@@ -130,6 +134,7 @@
       <div class="relative z-0 w-full mb-8">
         <textarea
           type="email"
+          v-model="data.message"
           name="email"
           placeholder=" "
           class="
@@ -163,6 +168,7 @@
               type="checkbox"
               name="radio"
               value="1"
+              v-model="data.agree"
               class="
                 mr-2
                 border-2 border-gray-300
@@ -177,6 +183,7 @@
       <button
         id="button"
         type="button"
+        @click="submitForm()"
         class="
           w-full
           px-6
@@ -190,13 +197,56 @@
           outline-none bg-brandBlue hover:bg-darkBlue
           hover:shadow-lg
           focus:outline-none
-        "
-      >
+        ">
         Submit
       </button>
     </form>
   </div>
 </template>
+<script>
+import axios from 'axios';
+
+export default {
+  name: "Home",
+  data() {
+    return {
+      data:{},
+    };
+  },
+  methods:{
+    submitForm(){
+      console.log(this.data)
+      var optionAxios = {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        }
+      axios
+      .post('http://vikash.programsmagic.com/mail', this.data, optionAxios)
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+        this.errored = true
+      })
+    },
+    setData(){
+      this.data = {
+        name: '',
+        email: '',
+        phone: '',
+        area: '',
+        message: '',
+        agree: false
+      }
+    }
+  },
+  created(){
+    this.setData()
+  }
+};
+</script>
 <style lang="postcss" scoped>
 .-z-1 {
     z-index: -1;

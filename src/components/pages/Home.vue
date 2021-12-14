@@ -90,7 +90,7 @@
                 0{{ index }}
               </h2>
               <h2 class="mt-4 font-bold text-xl">{{ data.title }}</h2>
-            </div>
+            </div>ser
             <div class="h-1 w-20 bg-darkBlue mt-4 mb-4"></div>
             <p class="text-gray-500 text-left mt-3">
               {{ data.description }}
@@ -109,11 +109,8 @@
       <div class="flex md:flex-row items-center flex-col">
         <div class="md:w-1/2">
           <div
-            class="
-              text-2xl text-center
-              md:text-left md:text-5xl md:pr-32
-              form-heading mb-10 md:mb-0
-            "
+            class=" text-2xl text-center md:text-left md:text-5xl md:pr-32 
+            form-heading mb-10 md:mb-0"
           >
             Get a free consultation from top industry professionals and manage
             your facility with ease and perfection.
@@ -142,6 +139,7 @@
       "
     ></div>
   </div>
+  
   <section>
     <div class="my-20 relative overflow-hidden">
       <div class="container mx-auto px-4">

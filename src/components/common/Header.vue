@@ -1,11 +1,11 @@
 <template>
   <div
     class="border-b border-gray10 border-opacity-100 z-10"
-    :class="`bg-white flex header transition ${
+    :class="bgClass + `flex header transition ${
       isMenuVisible ? 'header--visible' : 'header--hidden'
     }`"
   >
-    <nav class="container px-4 mx-auto">
+    <nav :class="'container px-4 mx-auto '+ bgClass">
       <div class="md:flex items-center justify-between py-2">
         <div class="flex justify-between items-center">
           <div class="text-2xl font-bold bg-gray-800 md:text-3xl">
@@ -100,6 +100,15 @@ export default {
       document.body.classList[isOpen ? "add" : "remove"]("overflow-y-hidden");
     },
   },
+  computed:{
+    currentRouteName() {
+        return this.$route.name;
+    },
+    bgClass(){
+      return this.currentRouteName == 'About'?
+      'bg-black text-white':'text-black header-color';
+    }
+  },
   methods: {
     onScroll() {
       // Get the current scroll position
@@ -149,8 +158,10 @@ export default {
   }
 }
 .header {
-  background-color: #dfdfdf;
   @apply fixed top-0 left-0 right-0 transition;
+}
+.header-color{
+  background-color: #dfdfdf;
 }
 @screen md {
   .header li > a {
