@@ -6,7 +6,7 @@
           <img src="@/assets/images/Footer-logo.svg" class="" />
         </div>
         <a class="my-3 block" href="/#"></a>
-        <a class="my-3 block" href="/#">Your Facility Experts</a>
+        <a class="my-3 block font-bold" href="/#">Your Facility<br/> Experts</a>
       </div>
       <div class="flex flex-col md:flex-row flex-1">
         <div class="p-5 md:w-1/4">
