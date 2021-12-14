@@ -3,7 +3,7 @@
     <div class="bg-opacity-50 bg-gray10">
       <div class="container mx-auto">
         <div
-          class="flex flex-col md:flex-row pt-32 md:pt-48 pb-16 md:pb-28 px-20"
+          class="flex flex-col md:flex-row pt-32 md:pt-40 pb-16 md:pb-16 px-20"
         >
           <div
             class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
@@ -12,77 +12,84 @@
               <h2 class="text-4xl font-semibold md:text-7xl">
                 We Will Take Care Of Your Facility
               </h2>
-              <div class="h-2 md:w-16 bg-darkBlue mt-5 mb-4"></div>
+              <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
               <p>We operate PAN India.</p>
             </div>
           </div>
-          <div class="lg:w-1/2 pl-32">
-            <div class="w-80 h-full bg-darkBlue"></div>
+          <div class="lg:w-1/2">
+            <div class="h-full">
+              <img
+                src="@/assets/images/backgorund/contact-hero.png"
+                class="max-w-full"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-    
-<section class="bg-darkBlue text-white">
-  <div class=" pt-10 pb-20 relative overflow-hidden">
-    <div class="container bg-darkBlue text-white mx-auto md:px-20">
-      <div class="flex md:flex-row items-center flex-col">
-        <div class="md:w-1/2">
-          <div
-            class="text-2xl text-center md:text-left md:text-5xl md:pr-32 
-            form-heading mb-10 md:mb-0">
-            Contact Us
+
+  <section class="bg-darkBlue text-white">
+    <div class="pt-10 pb-20 relative overflow-hidden">
+      <div class="container bg-darkBlue text-white mx-auto md:px-20">
+        <div class="flex md:flex-row items-center flex-col">
+          <div class="md:w-1/2 md:pr-24">
+            <div
+              class="
+                text-2xl text-center
+                md:text-left md:text-5xl md:pr-32
+                form-heading
+                mb-10
+                md:mb-0
+              "
+            >
+              Contact Us
+            </div>
+            <div
+              class="h-0.5 w-96 hidden text-white md:flex bg-white mt-5 mb-4"
+            ></div>
+            <p class="my-10">
+              We take pride in providing our clients with the best solutions and
+              customer experience. Our support desk is competently trained to
+              understand and resolve your queries within 48-72 working hours.
+            </p>
+            <p class="my-10 text-xl">
+              To date, our team has successfully accomplished multiple projects
+              in the FM industry with expertise in the same vertical.
+            </p>
+            <h2 class="text-xl font-semibold">Head Office</h2>
+            <div class="h-2 md:w-16 text-center bg-yellow mt-4 mb-4"></div>
+            <p>
+              Plot No : 84 & 85, 2nd Floor, VK Towers, Behind IDFC First Bank,
+              Kavuri Hills Extn, Madhapur, Hyderabad 500081 <br /><br />
+              Phone Number: +91 9100114610
+            </p>
+            <br />
+            <p>Email:</p>
+            <br />
+            <p>Follow Us:</p>
           </div>
-          <div class="h-0.5 w-96 hidden text-white md:flex bg-white mt-5 mb-4"></div>
-          <p class="my-10">
-              We take pride in providing our clients with the best solutions and customer experience. Our support desk is competently trained to understand and resolve your queries within 48-72 working hours.
-          </p>
-          <p class="my-10 text-xl">
-              To date, our team has successfully accomplished multiple projects in the FM industry with expertise in the same vertical.
-          </p>
-          <h2 class="text-xl font-semibold">Head Office</h2>
-          <div class="h-2 md:w-16 text-center bg-yellow mt-4 mb-4"></div>
-          <p>
-              Plot No : 84 & 85, 2nd Floor, VK Towers, Behind IDFC First Bank, Kavuri Hills Extn, Madhapur, Hyderabad 500081 <br><br> Phone Number: +91 9100114610
-          </p><br>
-          <p>Email: </p><br>
-          <p>Follow Us: </p>
-        </div>
-        <div class="md:w-1/2">
-          <EnquiryForm></EnquiryForm>
+          <div class="md:w-1/2">
+            <EnquiryForm></EnquiryForm>
+          </div>
         </div>
       </div>
     </div>
-    <div
-      class="
-        max-w-md
-        absolute
-        top-0
-        right-0
-        sideimg
-        sm:rounded-l-3xl
-        bg-brandBlue
-        p-10
-        hidden
-        md:block
-        h-full
-        text-white
-      "
-    ></div>
-  </div>
-</section>
+  </section>
 
   <section>
-   <img src="@/assets/images/backgorund/pexels-scott.png" class="w-full h-auto" />
+    <img
+      src="@/assets/images/backgorund/pexels-scott.png"
+      class="w-full h-auto"
+    />
   </section>
 </template>
 <script>
-import EnquiryForm from '../common/EnquiryForm'
+import EnquiryForm from "../common/EnquiryForm";
 export default {
-    name:'Contact Us',
-    components: { 
-        EnquiryForm,
-    }
-}
+  name: "Contact Us",
+  components: {
+    EnquiryForm,
+  },
+};
 </script>
