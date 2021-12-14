@@ -1,11 +1,11 @@
 <template>
   <div
     class="border-b border-gray10 border-opacity-100 z-10"
-    :class="`bg-white flex header transition ${
+    :class="bgClass + `flex header transition ${
       isMenuVisible ? 'header--visible' : 'header--hidden'
     }`"
   >
-    <nav class="container px-4 mx-auto">
+    <nav :class="'container px-4 mx-auto '+ bgClass">
       <div class="md:flex items-center justify-between py-2">
         <div class="flex justify-between items-center">
           <div class="text-2xl font-bold bg-gray-800 md:text-3xl">
@@ -15,8 +15,6 @@
           </div>
           <div
             class="md:hidden"
-            :class="{ active: isHamburgerOpen }"
-            @click="isHamburgerOpen = !isHamburgerOpen"
           >
             <button
               type="button"
@@ -26,6 +24,8 @@
                 hover:text-gray-700
                 focus:text-gray-700 focus:outline-none
               "
+              :class="{ active: isHamburgerOpen }"
+            @click="isHamburgerOpen = !isHamburgerOpen"
             >
               <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
                 <path
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col md:flex-row md:space-x-12 md:block"
+          class="flex flex-col md:flex-row md:space-x-12 md:block mob-link"
           :class="{ active: isHamburgerOpen }"
         >
           <router-link
@@ -48,7 +48,6 @@
               link
               font-semibold
               py-4
-              border-b border-gray10
               md:border-none md:py-0
               relative
             "
@@ -60,7 +59,6 @@
               link
               font-semibold
               py-4
-              border-b border-gray10
               md:border-none md:py-0
               relative
             "
@@ -72,7 +70,6 @@
               link
               font-semibold
               py-4
-              border-b border-gray10
               md:border-none md:py-0
               relative
             "
@@ -80,7 +77,7 @@
             >Services</router-link
           >
           <router-link
-            class="link font-semibold py-4 border-b md:py-0 relative"
+            class="link font-semibold py-4 border-none md:py-0 relative"
             to="/contact-us"
             >Contact Us</router-link
           >
@@ -102,6 +99,15 @@ export default {
     isHamburgerOpen(isOpen) {
       document.body.classList[isOpen ? "add" : "remove"]("overflow-y-hidden");
     },
+  },
+  computed:{
+    currentRouteName() {
+        return this.$route.name;
+    },
+    bgClass(){
+      return this.currentRouteName == 'About'?
+      'bg-black text-white':'text-black header-color';
+    }
   },
   methods: {
     onScroll() {
@@ -152,8 +158,10 @@ export default {
   }
 }
 .header {
-  background-color: #dfdfdf;
   @apply fixed top-0 left-0 right-0 transition;
+}
+.header-color{
+  background-color: #dfdfdf;
 }
 @screen md {
   .header li > a {
@@ -165,5 +173,9 @@ export default {
 }
 .header--hidden {
   transform: translateY(-100%);
+}
+@media screen and (max-width: 800px) {
+  .mob-link{display: none;}
+  .mob-link.active{display: flex;}
 }
 </style>
