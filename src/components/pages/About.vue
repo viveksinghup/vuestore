@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="lg:w-1/2">
-            <div class="h-full md:mb-0 mb-10">
+            <div class="h-full md:mb-0 mb-10 assets">
               <img
                 src="@/assets/images/backgorund/about-hero.png"
                 class="max-w-full"
@@ -117,7 +117,7 @@
   </section>
 
   <section>
-    <img src="@/assets/images/businessman.png" class="w-full h-auto" />
+    <img src="@/assets/images/businessman.png" class="w-full h-auto assets" />
   </section>
 
   <section>
@@ -298,7 +298,7 @@
       <div class="flex bg-opacity-20 my-10 flex-col md:flex-row">
         <div class="flex-1 md:w-32 border border-gray10 border-opacity-20 py-10">
           <div class="items-center">
-            <div class="text-center px-20">
+            <div class="text-center px-20 assets">
               <img class="mx-auto" src="@/assets/images/QA-Technic-Logo.png" />
             </div>
             <div class="px-20 text-center">
@@ -313,7 +313,7 @@
         </div>
         <div class="flex-1 md:w-32 border border-gray10 border-opacity-20 py-10">
           <div class="items-center">
-            <div class="text-center px-20">
+            <div class="text-center px-20 assets">
               <img class="mx-auto" src="@/assets/images/logo2.png" />
             </div>
             <div class="px-20 text-center">
@@ -328,7 +328,7 @@
         </div>
         <div class="flex-1 md:w-32 border border-gray10 border-opacity-20 py-10">
           <div class="items-center">
-            <div class="text-center px-20">
+            <div class="text-center px-20 assets">
               <img class="mx-auto" src="@/assets/images/logo2.png" />
             </div>
             <div class="px-20 text-center">

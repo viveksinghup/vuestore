@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="lg:w-1/2">
-          <div class="h-full md:mb-0 mb-10">
+          <div class="h-full md:mb-0 mb-10 assets">
             <img
               src="@/assets/images/backgorund/hero-img.png"
               class="max-w-full"
@@ -150,7 +150,7 @@
           <div class="lg:w-1/2 px-10 md:pr-0 md:pl-32 mb-10 md:mb-0">
             <img
               src="@/assets/images/backgorund/cust-info.png"
-              class="max-w-full md:pr-10"
+              class="max-w-full md:pr-10 assets"
             />
           </div>
           <div
@@ -263,7 +263,7 @@
     </div>
   </section>
   <section>
-    <img src="@/assets/images/home-coverimg.png" class="w-full h-auto" />
+    <img src="@/assets/images/home-coverimg.png" class="w-full h-auto assets" />
   </section>
 
   <section>
@@ -272,7 +272,7 @@
         <div class="relative text-lg md:text-4xl text-left md:p-10 w-full m-1">
           <img
             src="@/assets/images/comma.png"
-            class="hidden md:block w-16 absolute -m-16 -mt-10 my-6"
+            class="hidden md:block w-16 absolute -m-16 -mt-10 my-6 assets"
           />
           The FM industry is dynamically changing with unpredictable
           fluctuations and advancing technologies. The need for facility
@@ -299,7 +299,7 @@
         <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
         <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center assets">
         <img src="@/assets/images/clients.png" />
       </div>
     </div>
@@ -332,7 +332,7 @@
             <div class="w-100 h-full mb-10 md:mb-0">
               <img
                 src="@/assets/images/backgorund/business.png"
-                class="max-w-full md:pr-10"
+                class="max-w-full md:pr-10 assets"
               />
             </div>
           </div>

@@ -14,7 +14,7 @@
           <div class="flex justify-between items-center">
             <div class="text-2xl font-bold bg-gray-800 md:text-3xl w-40">
               <router-link to="/"
-                ><img src="@/assets/images/MAVEN.png" class="w-full"
+                ><img src="@/assets/images/MAVEN.png" class="w-full assets"
               /></router-link>
             </div>
             <div class="md:hidden">

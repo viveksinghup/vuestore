@@ -1,94 +1,75 @@
 <template>
-  <div class="container mx-auto my-20 md:px-40 py-6">
-    <div class="py-6 border-b border-gray10">
-      <div class="flex justify-between">
-        <span class="text-darkBlue-600 font-bold font-sans mb-4 text-xl pr-8"
-          >At Maven we employ a combination of Mechanised + Manpower led
-          housekeeping techniques. At Maven we employ a combination of
-          Mechanised.</span
-        >
-        <div class="w-4 h-4 bg-brandBlue"></div>
-      </div>
-      <div class="pt-6 text-base">
-        At Maven we employ a combination of Mechanised + Manpower led
-        housekeeping techniques. Our solution architects curate customized and
-        cost-effective housekeeping and maintenance strategies to help you keep
-        your vicinity hygienic, clean and green. We use sustainable and organic
-        products to consistently achieve results while caring for the
-        environment. Our efficient and well-trained staff is prepared to deliver
-        the quality services that you are looking for. Our housekeeping services
-        also include Grounds Maintenance Landscaping Services to ensure outdoor
-        areas are as well-kept as interiors.
-      </div>
-    </div>
-    <div class="py-6 border-b border-gray10">
-      <div class="flex justify-between">
-        <span class="text-darkBlue-600 font-bold font-sans mb-4 text-xl pr-8"
-          >At Maven we employ a combination of Mechanised + Manpower led
-          housekeeping techniques. At Maven we employ a combination of
-          Mechanised.</span
-        >
-        <div class="w-4 h-4 bg-brandBlue"></div>
-      </div>
-      <div class="pt-6 text-base">
-        At Maven we employ a combination of Mechanised + Manpower led
-        housekeeping techniques. Our solution architects curate customized and
-        cost-effective housekeeping and maintenance strategies to help you keep
-        your vicinity hygienic, clean and green. We use sustainable and organic
-        products to consistently achieve results while caring for the
-        environment. Our efficient and well-trained staff is prepared to deliver
-        the quality services that you are looking for. Our housekeeping services
-        also include Grounds Maintenance Landscaping Services to ensure outdoor
-        areas are as well-kept as interiors.
-      </div>
-    </div>
-    <div class="py-6 border-b border-gray10">
-      <div class="flex justify-between">
-        <span class="text-darkBlue-600 font-bold font-sans mb-4 text-xl pr-8"
-          >At Maven we employ a combination of Mechanised + Manpower led
-          housekeeping techniques. At Maven we employ a combination of
-          Mechanised.</span
-        >
-        <div class="w-4 h-4 bg-brandBlue"></div>
-      </div>
-      <div class="pt-6 text-base">
-        At Maven we employ a combination of Mechanised + Manpower led
-        housekeeping techniques. Our solution architects curate customized and
-        cost-effective housekeeping and maintenance strategies to help you keep
-        your vicinity hygienic, clean and green. We use sustainable and organic
-        products to consistently achieve results while caring for the
-        environment. Our efficient and well-trained staff is prepared to deliver
-        the quality services that you are looking for. Our housekeeping services
-        also include Grounds Maintenance Landscaping Services to ensure outdoor
-        areas are as well-kept as interiors.
-      </div>
-    </div>
-    <div class="py-6 border-b border-gray10">
-      <div class="flex justify-between">
-        <span class="text-darkBlue-600 font-bold font-sans mb-4 text-xl pr-8"
-          >At Maven we employ a combination of Mechanised + Manpower led
-          housekeeping techniques. At Maven we employ a combination of
-          Mechanised.</span
-        >
-        <div class="w-4 h-4 bg-brandBlue"></div>
-      </div>
-      <div class="pt-6 text-base">
-        At Maven we employ a combination of Mechanised + Manpower led
-        housekeeping techniques. Our solution architects curate customized and
-        cost-effective housekeeping and maintenance strategies to help you keep
-        your vicinity hygienic, clean and green. We use sustainable and organic
-        products to consistently achieve results while caring for the
-        environment. Our efficient and well-trained staff is prepared to deliver
-        the quality services that you are looking for. Our housekeeping services
-        also include Grounds Maintenance Landscaping Services to ensure outdoor
-        areas are as well-kept as interiors.
-      </div>
-    </div>
+  <div class="container mx-auto pt-40 md:px-40">
+    <FaqItem
+      v-for="(faq, i) in faqs"
+      :faq="faq"
+      :index="i"
+      :key="i"
+      :open="faq.open"
+      @toggleOpen="toggleOpen"
+    />
   </div>
 </template>
+
 <script>
+import FaqItem from "./FaqItem.vue";
+
 export default {
-  name: "faq",
-  components: {},
+  name: "app",
+  components: {
+    FaqItem,
+  },
+  data() {
+    return {
+      faqs: [
+        {
+          question: "Who is the best Superhero?",
+          answer: "I'm not sure but we love him 3000",
+          open: false,
+        },
+        {
+          question: "What is Goku's form called with White Hair?",
+          answer: "Mastered Ultra Instinct",
+          open: false,
+        },
+        {
+          question: "Have you liked & subscried yet?",
+          answer: "YES",
+          open: false,
+        },
+      ],
+    };
+  },
+  methods: {
+    toggleOpen: function (index) {
+      this.faqs = this.faqs.map((faq, i) => {
+        if (index === i) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      });
+    },
+  },
 };
 </script>
+<style>
+.answer {
+  transition: padding 0.45s;
+  max-height: 0px;
+  overflow: hidden;
+}
+.faq.open .answer {
+  padding-top: 12px;
+  max-height: 1000px;
+  overflow: visible;
+}
+.icon{
+    transition: 0.45s;
+}
+.faq.open .icon {
+    transform: rotate(180deg);
+}
+</style>

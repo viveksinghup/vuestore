@@ -29,7 +29,7 @@
             <div class="h-full md:mb-0 mb-10">
               <img
                 src="@/assets/images/backgorund/services-hero.png"
-                class="max-w-full"
+                class="max-w-full assets"
               />
             </div>
           </div>
@@ -59,7 +59,7 @@
     </div>
   </section>
   <section>
-   <img src="@/assets/images/backgorund/lightbulbs-blue-background.png" class="w-full h-auto" />
+   <img src="@/assets/images/backgorund/lightbulbs-blue-background.png" class="w-full h-auto assets" />
   </section>
   <section class="bg-brandBlue">
     <div class="container bg-brandBlue text-white mx-auto md:px-16 py-28">
@@ -152,7 +152,7 @@
               <div class="w-80 h-full">
                 <img
                   src="@/assets/images/backgorund/soft-solution.png"
-                  class="max-w-full"
+                  class="max-w-full assets"
                 />
               </div>
             </div>
@@ -235,7 +235,7 @@
           <div class="md:w-1/2 px-5 md:px-20 my-10 md:my-0">
             <img
                 src="@/assets/images/backgorund/security.png"
-                class="max-w-full"
+                class="max-w-full assets"
               />
           </div>
           <div
@@ -261,7 +261,7 @@
     </div>
   </section>
   <section>
-   <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full h-auto" />
+   <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full h-auto assets" />
   </section>
   <section class="bg-black">
     <div class="container text-white mx-auto px-5 md:px-16 py-10">

@@ -27,7 +27,7 @@
             <div class="h-full md:mb-0 mb-10">
               <img
                 src="@/assets/images/backgorund/contact-hero.png"
-                class="max-w-full"
+                class="max-w-full assets"
               />
             </div>
           </div>
@@ -87,7 +87,7 @@
   <section>
     <img
       src="@/assets/images/backgorund/pexels-scott.png"
-      class="w-full h-auto"
+      class="w-full h-auto assets"
     />
   </section>
 </template>
