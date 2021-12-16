@@ -3,7 +3,14 @@
     <div class="bg-opacity-50 bg-gray10">
       <div class="container mx-auto">
         <div
-          class="flex flex-col md:flex-row pt-32 md:pt-40 pb-16 md:pb-16 px-20"
+          class="flex flex-col-reverse
+          md:flex-row
+          pt-32
+          md:pt-40
+          pb-16
+          md:pb-16
+          px-6
+          md:px-20"
         >
           <div
             class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
@@ -19,7 +26,7 @@
             </div>
           </div>
           <div class="lg:w-1/2">
-            <div class="h-full">
+            <div class="h-full md:mb-0 mb-10">
               <img
                 src="@/assets/images/backgorund/services-hero.png"
                 class="max-w-full"
@@ -41,8 +48,7 @@
           class="
             md:w-1/2 flex-shrink-0
             text-lg
-            md:text-2xl
-            mt-20
+            md:text-2xl mt-10 px-5 md:px-0
             md:mt-20
           " >
         <p>
@@ -58,7 +64,7 @@
   <section class="bg-brandBlue">
     <div class="container bg-brandBlue text-white mx-auto md:px-16 py-28">
       <div class="flex flex-col text-center md:text-left md:flex-row">
-        <div class="flex flex-col items-left md:w-1/2 px-20 flex-shrink-0">
+        <div class="flex flex-col items-left md:w-1/2 px-5 md:px-20 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">Technical Solutions</div>
           <div class="h-0.5 hidden md:flex bg-white mt-6 mb-4"></div>
           <p class="mt-7">
@@ -73,7 +79,7 @@
         </div>
         <div
           class="
-            px-20
+            px-10 md:px-20
             md:w-1/2
             flex-shrink-0
             mt-20
@@ -84,7 +90,7 @@
           Our Electromechanical services include :
        </p>
         <p class="mt-2 ">
-          <ul class="list-disc pl-5">
+          <ul class="md:list-disc text-left md:pl-5">
             <li>HVAC Operations and Maintenance </li>
             <li>Electrical Operations and Maintenance</li>
             <li> Plumbing </li>
@@ -108,10 +114,10 @@
     </div>
   </section>
   <section>
-    <div class="container mx-auto md:px-16 py-10">
+    <div class="container mx-auto px-5 md:px-16 md:py-10">
       <div class="flex text-center md:text-left md:flex-row mt-12">
         <div class="flex flex-col items-left md:w-1/2">
-          <div class="text-2xl md:text-5xl pb-10">Soft Service<br/> Solutions</div>
+          <div class="text-2xl md:text-5xl pb-10">Soft Service Solutions</div>
         </div>
       </div>
       <div class="border-t-2 border-black border-solid">
@@ -182,7 +188,7 @@
     </div>
   </section>
   <section class="bg-darkBlue">
-    <div class="container bg-darkBlue text-white mx-auto md:px-16 py-32">
+    <div class="container bg-darkBlue text-white mx-auto px-5 md:px-16 py-16 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Pest Management Solutions</div>
@@ -199,7 +205,7 @@
         </div>
         <div
           class="
-            px-20
+            md:px-20
             md:w-1/2
             flex-shrink-0
             mt-20
@@ -208,7 +214,7 @@
         >
           <p class="mt-8 text-lg md:text-2xl">Our pest management services include :</p>
           <p class="mt-2 ">
-            <ul class="list-disc pl-5">
+            <ul class="md:list-disc text-left md:pl-5">
               <li>General Pest Control</li>
               <li>Mosquito / Wasps / Bees Control </li>
               <li>Rodent / Bird Control </li>
@@ -226,7 +232,7 @@
     <div class="relative overflow-hidden">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row md:pt-28 pb-20 md:pb-28">
-          <div class="lg:w-1/2 md:px-20">
+          <div class="md:w-1/2 px-5 md:px-20 my-10 md:my-0">
             <img
                 src="@/assets/images/backgorund/security.png"
                 class="max-w-full"
@@ -241,7 +247,7 @@
               <p class=" mt-10">
                 We have one of the best-trained security guards in the industry with keen observation skills and a wide range of security solutions and access control systems. We offer customized solutions to schools, government buildings, public centres, retail stores, commercial and residential buildings, hotels, and restaurants.
               </p>
-              <ul class="mt-5 list-disc pl-5">
+              <ul class="md:list-disc text-left md:pl-5 mt-10 md:mt-0">
                 <li>24/7 Control Room Facility</li>
                 <li>Extensive Communication Network For All Staff</li>
                 <li>Regular Inspection And Patrolling At Night</li>
@@ -258,7 +264,7 @@
    <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full h-auto" />
   </section>
   <section class="bg-black">
-    <div class="container text-white mx-auto md:px-16 py-10">
+    <div class="container text-white mx-auto px-5 md:px-16 py-10">
       <div class="flex text-center md:text-left md:flex-row mt-20">
         <div class="flex flex-col items-left md:w-1/">
           <div class="text-2xl md:text-5xl font-medium">Specialised Services Solutions</div>
@@ -289,21 +295,19 @@
       </div>
     </div>
   </section>
-  
-
   <section>
     <div class="container mx-auto md:px-32 py-20">
       <div class="flex flex-col items-center md:w-1/">
         <div class="text-2xl text-center md:text-5xl font-medium">What Our Clients Say</div>
         <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
       </div>
-      <div class="flex my-10">
-        <div class="flex-1 w-56 bg-brandBlue text-white py-10 mx-10">
+      <div class="flex md:my-10 px-5 md:px-0 flex-col md:flex-row">
+        <div class="flex-1 md:w-56 bg-brandBlue text-white py-10 md:mx-10">
           <div class="items-center">
             <div class="text-center">
                 <img class="mx-auto p-5" src="@/assets/images/quote-icon.svg"/>
             </div>
-            <div class="px-20 text-center">
+            <div class="px-10 md:px-20 text-center">
               <p class="text-gray-500 text-sm mt-2">
                 Remarkable customer service and team support!. We are very glad to work with Maven. They provided us with timely support, highly trained staff and one of the best teams to manage our facility. We look forward to many more years of partnership.
               </p>
@@ -315,26 +319,26 @@
               </h2>
             </div>
           </div>
-          </div>
-          <div class="flex-1 w-56 bg-brandBlue text-white py-10 mx-10">
-            <div class="items-center">
-              <div class="text-center">
-                <img class="mx-auto p-5" src="@/assets/images/quote-icon.svg"/> 
-              </div>
-               <div class="px-20 text-center">
-                <p class="text-gray-500 text-sm mt-2">
-                  For organisations, proper facility management is very critical to retain talent, prospective visitors and clients. Maven helped us understand our industry requirements and supported our operations with ease, comfort and cost-effective ways. Thank you Maven for your support.
-                </p>
-                <h2 class="mt-4 text-center">
-                  <div class="h-2 md:w-16 mx-auto text-center bg-yellow mt-5 mb-4"></div>
-                </h2>
-                <h2 class="mt-7 text-center">
-                  XYZ, HUmann resources
-                </h2>
-              </div>
+        </div>
+        <div class="flex-1 md:w-56 bg-brandBlue mt-10 md:mt-0 text-white py-10 md:mx-10">
+          <div class="items-center">
+            <div class="text-center">
+              <img class="mx-auto p-5" src="@/assets/images/quote-icon.svg"/> 
+            </div>
+              <div class="px-10 md:px-20 text-center">
+              <p class="text-gray-500 text-sm mt-2">
+                For organisations, proper facility management is very critical to retain talent, prospective visitors and clients. Maven helped us understand our industry requirements and supported our operations with ease, comfort and cost-effective ways. Thank you Maven for your support.
+              </p>
+              <h2 class="mt-4 text-center">
+                <div class="h-2 md:w-16 mx-auto text-center bg-yellow mt-5 mb-4"></div>
+              </h2>
+              <h2 class="mt-7 text-center">
+                XYZ, HUmann resources
+              </h2>
             </div>
           </div>
         </div>
+      </div>
     </div>
   </section>
 

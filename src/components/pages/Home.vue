@@ -2,7 +2,16 @@
   <div class="bg-opacity-50 bg-gray10">
     <div class="container mx-auto px-4">
       <div
-        class="flex flex-col md:flex-row pt-32 md:pt-40 pb-16 md:pb-16 px-20"
+        class="
+          flex flex-col-reverse
+          md:flex-row
+          pt-32
+          md:pt-40
+          pb-16
+          md:pb-16
+          px-6
+          md:px-20
+        "
       >
         <div
           class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
@@ -40,7 +49,7 @@
           </div>
         </div>
         <div class="lg:w-1/2">
-          <div class="h-full">
+          <div class="h-full md:mb-0 mb-10">
             <img
               src="@/assets/images/backgorund/hero-img.png"
               class="max-w-full"
@@ -52,7 +61,7 @@
   </div>
 
   <section>
-    <div class="container mx-auto md:px-16 py-10 my-10">
+    <div class="container mx-auto px-4 md:px-16 py-10 my-10">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Services</div>
@@ -60,7 +69,7 @@
         </div>
         <div
           class="
-            px-20
+            px-10 md:px-20
             md:w-2/3
             flex-shrink-0
             text-lg
@@ -110,7 +119,7 @@
   </section>
 
   <div class="my-20 relative overflow-hidden">
-    <div class="container mx-auto md:px-20">
+    <div class="container mx-auto px-6 md:px-20">
       <div class="flex md:flex-row items-center flex-col">
         <div class="md:w-1/2">
           <div
@@ -138,7 +147,7 @@
     <div class="my-20 relative overflow-hidden">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row mt-10 md:pt-48 pb-20 md:pb-28">
-          <div class="lg:w-1/2 pl-32">
+          <div class="lg:w-1/2 px-10 md:pr-0 md:pl-32 mb-10 md:mb-0">
             <img
               src="@/assets/images/backgorund/cust-info.png"
               class="max-w-full md:pr-10"
@@ -197,7 +206,7 @@
   </section>
   <section>
     <div class="mt-20 bg-black relative overflow-hidden">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-10 md:px-4">
         <div
           class="
             flex flex-col
@@ -258,12 +267,12 @@
   </section>
 
   <section>
-    <div class="container mx-auto md:px-20 py-10 my-20">
+    <div class="container mx-auto md:px-20 py-10 md:my-20">
       <div class="flex flex-col items-center px-10 md:px-40">
-        <div class="relative text-2xl md:text-4xl text-left p-10 w-full m-1">
+        <div class="relative text-lg md:text-4xl text-left md:p-10 w-full m-1">
           <img
             src="@/assets/images/comma.png"
-            class="w-16 absolute -m-16 -mt-10 my-6"
+            class="hidden md:block w-16 absolute -m-16 -mt-10 my-6"
           />
           The FM industry is dynamically changing with unpredictable
           fluctuations and advancing technologies. The need for facility
@@ -287,7 +296,7 @@
       "
     >
       <div class="flex flex-col items-center">
-        <div class="text-4xl font-medium">Our Clients</div>
+        <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
         <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
       </div>
       <div class="flex justify-center">
@@ -299,15 +308,17 @@
   <section>
     <div class="bg-opacity-20 bg-gray10">
       <div class="container mx-auto px-4">
-        <div class="flex px-10 py-20">
+        <div class="flex md:px-10 py-20 flex-col-reverse md:flex-row">
           <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 pr-20"
+            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
           >
             <div>
-              <h2 class="text-2xl md:text-6xl">
+              <h2 class="text-xl md:text-6xl">
                 Business Segments We Operate In
               </h2>
-              <div class="h-2 w-16 hidden md:block bg-brandBlue mt-5 mb-4"></div>
+              <div
+                class="h-2 w-16 hidden md:block bg-brandBlue mt-5 mb-4"
+              ></div>
               <div class="mt-2 text-sm md:text-lg">
                 We offer extensive facility management services in different
                 industry segments. Our facility engineers are competently
@@ -318,7 +329,7 @@
             </div>
           </div>
           <div class="lg:w-1/2">
-            <div class="w-100 h-full">
+            <div class="w-100 h-full mb-10 md:mb-0">
               <img
                 src="@/assets/images/backgorund/business.png"
                 class="max-w-full md:pr-10"

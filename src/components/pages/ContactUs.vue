@@ -3,7 +3,14 @@
     <div class="bg-opacity-50 bg-gray10">
       <div class="container mx-auto">
         <div
-          class="flex flex-col md:flex-row pt-32 md:pt-40 pb-16 md:pb-16 px-20"
+          class="flex flex-col-reverse
+          md:flex-row
+          pt-32
+          md:pt-40
+          pb-16
+          md:pb-16
+          px-6
+          md:px-20"
         >
           <div
             class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
@@ -17,7 +24,7 @@
             </div>
           </div>
           <div class="lg:w-1/2">
-            <div class="h-full">
+            <div class="h-full md:mb-0 mb-10">
               <img
                 src="@/assets/images/backgorund/contact-hero.png"
                 class="max-w-full"
@@ -31,7 +38,7 @@
 
   <section class="bg-darkBlue text-white">
     <div class="pt-10 pb-20 relative overflow-hidden">
-      <div class="container bg-darkBlue text-white mx-auto md:px-20">
+      <div class="container bg-darkBlue text-white mx-auto px-6 md:px-20">
         <div class="flex md:flex-row items-center flex-col">
           <div class="md:w-1/2 md:pr-24">
             <div
@@ -69,7 +76,7 @@
             <br />
             <p>Follow Us:</p>
           </div>
-          <div class="md:w-1/2">
+          <div class="md:w-1/2 mt-10 md:mt-0">
             <EnquiryForm></EnquiryForm>
           </div>
         </div>

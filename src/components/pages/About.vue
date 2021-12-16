@@ -3,7 +3,14 @@
     <div class="bg-black">
       <div class="container mx-auto">
         <div
-          class="flex flex-col md:flex-row pt-32 md:pt-40 pb-16 md:pb-16 px-20"
+          class="flex flex-col-reverse
+          md:flex-row
+          pt-32
+          md:pt-40
+          pb-16
+          md:pb-16
+          px-6
+          md:px-20"
         >
           <div
             class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
@@ -12,11 +19,11 @@
               <h2 class="text-4xl text-white font-semibold md:text-7xl">
                 Customised Solutions For Clients
               </h2>
-              <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
+              <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4 hidden md:block"></div>
             </div>
           </div>
           <div class="lg:w-1/2">
-            <div class="h-full">
+            <div class="h-full md:mb-0 mb-10">
               <img
                 src="@/assets/images/backgorund/about-hero.png"
                 class="max-w-full"
@@ -29,7 +36,7 @@
   </section>
 
   <section class="bg-brandBlue">
-    <div class="container bg-brandBlue text-white mx-auto md:px-16 py-16">
+    <div class="container bg-brandBlue text-white mx-auto px-5 md:px-16 py-16">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">
@@ -57,7 +64,7 @@
         </div>
         <div
           class="
-            px-20
+            md:px-20
             md:w-1/2
             flex-shrink-0
             text-lg
@@ -114,21 +121,20 @@
   </section>
 
   <section>
-    <div class="container mx-auto md:px-16 py-20">
+    <div class="container mx-auto md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Mission</div>
-          <div class="h-0.5 hidden md:flex w-96 bg-black mt-10 mb-4"></div>
+          <div class="h-0.5 hidden md:flex md:w-96 bg-black mt-10 mb-4"></div>
         </div>
         <div
           class="
-            px-20
+            px-5 md:px-20
             md:w-2/3
             flex-shrink-0
             text-lg
             md:text-2xl
-            mt-20
-            md:mt-20
+            mt-10 md:mt-20
           "
         >
           <p>
@@ -142,7 +148,7 @@
   </section>
 
   <section>
-    <div class="container mx-auto md:px-16 py-20">
+    <div class="ontainer mx-auto md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Vision</div>
@@ -150,12 +156,12 @@
         </div>
         <div
           class="
-            px-20
+            px-10 md:px-20
             md:w-2/3
             flex-shrink-0
             text-lg
             md:text-2xl
-            mt-20
+            mt-10
             md:mt-20
           "
         >
@@ -170,7 +176,7 @@
   </section>
 
   <section class="bg-white">
-    <div class="container mx-auto md:px-16 py-20">
+    <div class="ontainer mx-auto px-10 md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Values</div>
@@ -192,7 +198,7 @@
           <div
             v-for="(data, index) in values"
             :key="index"
-            class="flex flex-col px-14 py-5"
+            class="flex flex-col md:px-14 py-5"
           >
             <div class="flex-1">
               <div class="flex items-center">
@@ -212,7 +218,7 @@
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
   <section class="bg-white">
-    <div class="container mx-auto md:px-32 py-20">
+    <div class="container mx-auto px-10 md:px-32 py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl">Our Leadership Team</div>
@@ -220,22 +226,15 @@
         </div>
       </div>
       <div>
-        <div
-          class="
-            flex justify-center
-            flex-col items-center
-            mt-6
-            md:px-40
-          "
-        >
-          <div class="flex bg-opacity-20 mb-16 bg-gray10">
+        <div class="flex justify-center flex-col items-center mt-6 md:px-40">
+          <div class="flex bg-opacity-20 mb-16 bg-gray10 flex-col md:flex-row">
             <div class="w-96 h-96">
               <img
                 class="w-full object-cover h-full"
                 src="@/assets/images/avatar/user1.webp"
               />
             </div>
-            <div class="w-96 flex flex-col justify-center px-12">
+            <div class="w-96 flex flex-col justify-center px-12 pb-10 md:pb-0 pt-5 md:pt-0">
               <div class="flex items-center">
                 <h3 class="mt-4 text-2xl">Chad Gilbert</h3>
               </div>
@@ -246,8 +245,8 @@
               </p>
             </div>
           </div>
-          <div class="flex bg-opacity-20 mb-16 bg-gray10">
-            <div class="w-96 flex flex-col justify-center px-12">
+          <div class="flex bg-opacity-20 mb-16 bg-gray10 flex-col md:flex-row">
+            <div class="w-96 flex flex-col justify-center px-12 pb-10 md:pb-0 pt-5 md:pt-0">
               <div class="flex items-center">
                 <h3 class="mt-4 text-2xl">Teamwork</h3>
               </div>
@@ -264,14 +263,14 @@
               />
             </div>
           </div>
-          <div class="flex bg-opacity-20 mb-16 bg-gray10">
+          <div class="flex bg-opacity-20 mb-16 bg-gray10 flex-col md:flex-row">
             <div class="w-96 h-96">
               <img
                 class="w-full object-cover h-full"
                 src="@/assets/images/avatar/user3.webp"
               />
             </div>
-            <div class="w-96 flex flex-col justify-center px-12">
+            <div class="w-96 flex flex-col justify-center px-12 pb-10 md:pb-0 pt-5 md:pt-0">
               <div class="flex items-center">
                 <h3 class="mt-4 text-2xl">Chad Gilbert</h3>
               </div>
@@ -289,15 +288,15 @@
   </section>
 
   <section class="bg-white">
-    <div class="container mx-auto md:px-32 py-20">
+    <div class="container mx-auto px-10 md:px-32 py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Accreditations</div>
           <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
         </div>
       </div>
-      <div class="flex bg-opacity-20 my-10">
-        <div class="flex-1 w-32 border border-gray10 border-opacity-20 py-10">
+      <div class="flex bg-opacity-20 my-10 flex-col md:flex-row">
+        <div class="flex-1 md:w-32 border border-gray10 border-opacity-20 py-10">
           <div class="items-center">
             <div class="text-center px-20">
               <img class="mx-auto" src="@/assets/images/QA-Technic-Logo.png" />
@@ -312,7 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-1 w-32 border border-gray10 border-opacity-20 py-10">
+        <div class="flex-1 md:w-32 border border-gray10 border-opacity-20 py-10">
           <div class="items-center">
             <div class="text-center px-20">
               <img class="mx-auto" src="@/assets/images/logo2.png" />
@@ -327,7 +326,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-1 w-32 border border-gray10 border-opacity-20 py-10">
+        <div class="flex-1 md:w-32 border border-gray10 border-opacity-20 py-10">
           <div class="items-center">
             <div class="text-center px-20">
               <img class="mx-auto" src="@/assets/images/logo2.png" />

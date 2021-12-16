@@ -1,12 +1,25 @@
 <template>
-  <div class="bg-gray-100 px-27 my-20">
-    <div class="max-w-6xl flex-col md:flex-row m-auto text-gray-800 flex flex-wrap justify-center">
+  <div class="bg-gray-100 px-27 my-10 md:my-20">
+    <div
+      class="
+        max-w-6xl
+        flex-col
+        md:flex-row
+        m-auto
+        text-gray-800
+        flex flex-wrap
+        justify-center
+      "
+    >
       <div class="p-5 md:w-72">
         <div class="text-xs">
           <img src="@/assets/images/Footer-logo.svg" class="" />
         </div>
         <a class="my-3 block" href="/#"></a>
-        <a class="my-3 block font-bold" href="/#">Your Facility<br/> Experts</a>
+        <a class="my-3 block font-bold" href="/#"
+          >Your Facility<br />
+          Experts</a
+        >
       </div>
       <div class="flex flex-col md:flex-row flex-1">
         <div class="p-5 md:w-1/4">
@@ -51,10 +64,12 @@
       </div>
     </div>
   </div>
-  <div class="bg-gray-100 px-27 py-5 bg-black text-white">
-    <div class="grid grid-cols-3 text-sm gap-4 max-w-6xl m-auto">
+  <div class="bg-gray-100 px-4 py-5 bg-black text-white">
+    <div class="grid grid-cols-3 text-xs md:text-sm gap-4 max-w-6xl m-auto">
       <h4 class="text-left">©2021 Maven Facility Management Pvt. Ltd.</h4>
-      <h4 class="text-center">Disclaimer</h4>
+      <!-- <h4 class="text-center">Disclaimer</h4> -->
+      <div class="text-center"><router-link to="/tnc"
+        >Disclaimer</router-link></div>
       <h4 class="text-right">
         Website by- <span class="text-bold">SocialCulture</span>
       </h4>

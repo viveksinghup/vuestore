@@ -4,6 +4,8 @@ import About from "@/components/pages/About.vue";
 import Services from "@/components/pages/Services.vue";
 import Contact from "@/components/pages/ContactUs.vue";
 import NotFound from "@/components/pages/NotFound.vue";
+import Faq from "@/components/pages/Faq.vue";
+import Tnc from "@/components/pages/Tnc.vue";
 
  const routes = [
   {
@@ -25,6 +27,16 @@ import NotFound from "@/components/pages/NotFound.vue";
     path: "/contact-us",
     name: "Contact",
     component: Contact,
+  },
+  {
+    path: "/tnc",
+    name: "tnc",
+    component: Tnc,
+  },
+  {
+    path: "/faq",
+    name: "faq",
+    component: Faq,
   },
   {
     path: "/:catchAll(.*)",
