@@ -94,6 +94,11 @@ export default {
         ? "bg-black text-white"
         : "text-black header-color";
     },
+    getLogo() {
+      return this.currentRouteName == "About"
+        ? "@/assets/images/maven-white.svg"
+        : "@/assets/images/MAVEN.png";
+    },
   },
   methods: {
     onScroll() {

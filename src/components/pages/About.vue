@@ -93,7 +93,7 @@
           <div
             v-for="(data, index) in ourEdge"
             :key="index"
-            class="flex w-full flex-col px-10 py-5"
+            class="flex w-full flex-col px-10 pt-5"
           >
             <div class="flex-1">
               <div class="flex items-center">
@@ -118,7 +118,7 @@
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Mission</div>
-          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+          <div class="h-0.5 hidden md:flex w-96 bg-black mt-10 mb-4"></div>
         </div>
         <div
           class="
@@ -146,7 +146,7 @@
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Vision</div>
-          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+          <div class="h-0.5 hidden md:flex w-96 bg-black mt-10 mb-4"></div>
         </div>
         <div
           class="
@@ -170,7 +170,7 @@
   </section>
 
   <section class="bg-white">
-    <div class="container mx-auto md:px-32 py-20">
+    <div class="container mx-auto md:px-16 py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Values</div>
@@ -209,86 +209,73 @@
         </div>
       </div>
     </div>
+    <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
-
   <section class="bg-white">
     <div class="container mx-auto md:px-32 py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
-          <div class="text-2xl md:text-5xl font-medium">
-            Our Leadership Team
-          </div>
-          <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
+          <div class="text-2xl md:text-5xl">Our Leadership Team</div>
+          <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-12"></div>
         </div>
       </div>
       <div>
         <div
           class="
-            grid grid-cols-1
-            sm:grid-cols-1
-            md:grid-cols-1
-            xl:grid-cols-1
-            gap-4
+            flex justify-center
+            flex-col items-center
             mt-6
-            md:px-32
+            md:px-40
           "
         >
-          <div class="flex bg-opacity-20 bg-gray10">
-            <div class="flex-1 w-64">
-              <div class="items-center mr-1">
-                <img
-                  class="w-400 h-400"
-                  src="@/assets/images/avatar/user1.webp"
-                />
-              </div>
+          <div class="flex bg-opacity-20 mb-16 bg-gray10">
+            <div class="w-96 h-96">
+              <img
+                class="w-full object-cover h-full"
+                src="@/assets/images/avatar/user1.webp"
+              />
             </div>
-            <div class="flex-1 w-32 py-10">
-              <div class="flex items-center px-7">
+            <div class="w-96 flex flex-col justify-center px-12">
+              <div class="flex items-center">
                 <h3 class="mt-4 text-2xl">Chad Gilbert</h3>
               </div>
-              <p class="text-gray-500 mt-5 px-7">
+              <p class="text-gray-500 mt-5">
                 We intend to work together as a team and provide organizations
                 with quality services. At Maven we are committed to helping you
                 reach your goals.
               </p>
             </div>
           </div>
-
-          <div class="flex bg-opacity-20 bg-gray10 my-10">
-            <div class="flex-1 w-32 py-10">
-              <div class="flex items-center px-7">
+          <div class="flex bg-opacity-20 mb-16 bg-gray10">
+            <div class="w-96 flex flex-col justify-center px-12">
+              <div class="flex items-center">
                 <h3 class="mt-4 text-2xl">Teamwork</h3>
               </div>
-              <p class="text-gray-500 mt-5 px-7">
+              <p class="text-gray-500 mt-5">
                 We intend to work together as a team and provide organizations
                 with quality services. At Maven we are committed to helping you
                 reach your goals.
               </p>
             </div>
-            <div class="flex-1 w-64">
-              <div class="items-center ml-1">
-                <img
-                  class="w-400 h-400"
-                  src="@/assets/images/avatar/user2.webp"
-                />
-              </div>
+            <div class="w-96 h-96">
+              <img
+                class="w-full object-cover h-full"
+                src="@/assets/images/avatar/user2.webp"
+              />
             </div>
           </div>
-
-          <div class="flex bg-opacity-20 bg-gray10">
-            <div class="flex-1 w-64">
-              <div class="items-center mr-1">
-                <img
-                  class="w-400 h-400"
-                  src="@/assets/images/avatar/user3.webp"
-                />
-              </div>
+          <div class="flex bg-opacity-20 mb-16 bg-gray10">
+            <div class="w-96 h-96">
+              <img
+                class="w-full object-cover h-full"
+                src="@/assets/images/avatar/user3.webp"
+              />
             </div>
-            <div class="flex-1 w-32 py-10">
-              <div class="flex items-center px-7">
+            <div class="w-96 flex flex-col justify-center px-12">
+              <div class="flex items-center">
                 <h3 class="mt-4 text-2xl">Chad Gilbert</h3>
               </div>
-              <p class="text-gray-500 mt-5 px-7">
+              <p class="text-gray-500 mt-5">
                 We intend to work together as a team and provide organizations
                 with quality services. At Maven we are committed to helping you
                 reach your goals.
@@ -298,6 +285,7 @@
         </div>
       </div>
     </div>
+    <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
 
   <section class="bg-white">
