@@ -48,8 +48,8 @@
             v-for="(data, index) in footerCol3"
             :key="index"
             class="my-3 block text-sm opacity-50"
-            href="/#"
-            >{{ data }}</a
+            :href="data.url"
+            >{{ data.title }}</a
           >
         </div>
         <div class="p-5 md:w-1/4">
@@ -97,7 +97,32 @@ export default {
         "Security Solutions",
         "Specialised and Additional Service Solutions",
       ],
-      footerCol3: ["Clientele", "Blogs", "FAQ`s"],
+      footerCol3: [
+        { 
+          title: "Home",
+          url: '/'
+        },
+        {
+          title: "Services",
+          url: '/services'
+        },
+        {
+          title: "FAQ`s",
+          url: '/faq'
+        },
+        {
+          title: "Terms and Conditions",
+          url: '/tnc'
+        },
+        {
+          title: "About Us",
+          url: '/about'
+        },
+        {
+          title: "Contact Us",
+          url: '/contact-us'
+        }
+        ],
     };
   },
 };

@@ -127,8 +127,7 @@
             sm:grid-cols-1
             md:grid-cols-2
             xl:grid-cols-2
-            gap-8 -mx-10
-          pt-10
+            pt-10
           ">
           <div class="flex flex-col px-10 py-5">
             <div class="flex-1">
@@ -277,7 +276,6 @@
             sm:grid-cols-1
             md:grid-cols-2
             xl:grid-cols-2
-            gap-4 -mx-14
             "
             >
             <div v-for="(data,index) in solutions" :key="index" class="flex flex-col px-14 pt-10">

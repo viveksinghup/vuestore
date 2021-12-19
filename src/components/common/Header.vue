@@ -13,9 +13,10 @@
         <div class="md:flex items-center justify-between py-7">
           <div class="flex justify-between items-center">
             <div class="text-2xl font-bold bg-gray-800 md:text-3xl w-40">
-              <router-link to="/"
-                ><img src="@/assets/images/MAVEN.png" class="w-full assets"
-              /></router-link>
+              <router-link to="/">
+                <img v-if="currentRouteName == 'About'" src="@/assets/white_logo.png" class="w-full assets"/>
+                <img v-else src="@/assets/images/MAVEN.png" class="w-full assets"/>
+              </router-link>
             </div>
             <div class="md:hidden">
               <button
@@ -93,12 +94,7 @@ export default {
       return this.currentRouteName == "About"
         ? "bg-black text-white"
         : "text-black header-color";
-    },
-    getLogo() {
-      return this.currentRouteName == "About"
-        ? "@/assets/images/maven-white.svg"
-        : "@/assets/images/MAVEN.png";
-    },
+    }
   },
   methods: {
     onScroll() {

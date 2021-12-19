@@ -92,9 +92,7 @@
             sm:grid-cols-1
             md:grid-cols-2
             xl:grid-cols-3
-            gap-10
             mt-6
-            -mx-10
           "
         >
           <div
@@ -190,9 +188,7 @@
             sm:grid-cols-1
             md:grid-cols-2
             xl:grid-cols-2
-            gap-4
             mt-6
-            md:px-32
           "
         >
           <div
@@ -228,9 +224,9 @@
       <div>
         <div class="flex justify-center flex-col items-center mt-6 md:px-40">
           <div class="flex bg-opacity-20 mb-16 bg-gray10 flex-col md:flex-row">
-            <div class="w-96 h-96">
+            <div class="md:w-96 md:h-96">
               <img
-                class="w-full object-cover h-full"
+                class="object-cover h-full"
                 src="@/assets/images/avatar/user1.webp"
               />
             </div>
@@ -256,17 +252,17 @@
                 reach your goals.
               </p>
             </div>
-            <div class="w-96 h-96">
+            <div class="md:w-96 md:h-96">
               <img
-                class="w-full object-cover h-full"
+                class="object-cover h-full"
                 src="@/assets/images/avatar/user2.webp"
               />
             </div>
           </div>
           <div class="flex bg-opacity-20 mb-16 bg-gray10 flex-col md:flex-row">
-            <div class="w-96 h-96">
+            <div class="md:w-96 md:h-96">
               <img
-                class="w-full object-cover h-full"
+                class="object-cover h-full"
                 src="@/assets/images/avatar/user3.webp"
               />
             </div>
