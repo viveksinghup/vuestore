@@ -6,6 +6,7 @@
       px-10
       py-12
       bg-white
+      text-black
       border-0
       shadow-lg
       sm:rounded-3xl
@@ -200,6 +201,15 @@
         ">
         Submit
       </button>
+      <p v-if="alert !== ''" class="text-green-500 mt-5">
+        {{alert}}
+      </p>
+      <p v-if="error">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li>{{ error }}</li>
+        </ul>
+      </p>
     </form>
   </div>
 </template>
@@ -211,25 +221,31 @@ export default {
   data() {
     return {
       data:{},
+      alert:'',
+      error:'',
     };
   },
-  methods:{
+  methods: {
     submitForm(){
       console.log(this.data)
-      var optionAxios = {
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            }
-        }
-      axios
-      .post('http://vikash.programsmagic.com/mail', this.data, optionAxios)
-      .then(response => {
-        console.log(response)
-      })
-      .catch(error => {
-        console.log(error)
-        this.errored = true
-      })
+      this.error = this.validateFormData(this.data);
+      if(this.error == ''){
+          axios
+          .post('http://vikash.programsmagic.com/api/email', this.data)
+          .then(response => {
+            console.log(response)
+            this.alert = 'Sucessfully Submmited';
+            this.$toast('Sucessfully Submmited',{ type:'success'});
+          })
+          .catch(error => {
+            console.log(error)
+            this.$toast(error,{type: 'error'});
+          })
+      }else{
+       this.$toast(this.error,{ type:'error'});
+      }
+       this.alert =''
+       this.error =''
     },
     setData(){
       this.data = {
@@ -240,6 +256,15 @@ export default {
         message: '',
         agree: false
       }
+    },
+    validateFormData(data){
+      console.log(data)
+      for (var key in data) {
+         if(data[key] === ''){
+             return `Please fill ${key} Field`;
+         }
+      }
+      return '';
     }
   },
   created(){
