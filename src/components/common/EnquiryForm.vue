@@ -234,7 +234,6 @@ export default {
           .post('http://vikash.programsmagic.com/api/email', this.data)
           .then(response => {
             console.log(response)
-            this.alert = 'Sucessfully Submmited';
             this.$toast('Sucessfully Submmited',{ type:'success'});
           })
           .catch(error => {
