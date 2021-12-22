@@ -48,22 +48,26 @@
           >
             <router-link
               class="link font-semibold py-4 md:border-none md:py-0 relative"
+              @click="closeHamburgerMenu()"
               to="/"
               >Home</router-link
             >
             <router-link
               class="link font-semibold py-4 md:border-none md:py-0 relative"
               to="/about"
+              @click="closeHamburgerMenu()"
               >About</router-link
             >
             <router-link
               class="link font-semibold py-4 md:border-none md:py-0 relative"
               to="/services"
+              @click="closeHamburgerMenu()"
               >Services</router-link
             >
             <router-link
               class="link font-semibold py-4 border-none md:py-0 relative"
               to="/contact-us"
+              @click="closeHamburgerMenu()"
               >Contact Us</router-link
             >
           </div>
@@ -109,6 +113,9 @@ export default {
       }
       this.lastScrollPosition = currentScrollPosition;
     },
+    closeHamburgerMenu(){
+     return this.isHamburgerOpen = false;
+    }
   },
   mounted() {
     if (process.browser) {

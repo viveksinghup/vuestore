@@ -93,19 +93,54 @@
             md:grid-cols-2
             xl:grid-cols-3
             mt-6
-          "
-        >
-          <div
-            v-for="(data, index) in ourEdge"
-            :key="index"
-            class="flex w-full flex-col px-10 pt-5"
-          >
+          ">
+          <div class="flex w-full flex-col px-10 lg:pl-0 pt-5" >
             <div class="flex-1">
               <div class="flex items-center">
-                <h2 class="mt-4 text-2xl">{{ data.title }}</h2>
+                <h2 class="mt-4 text-2xl">Always Equipped</h2>
               </div>
               <p class="text-gray-500 mt-5">
-                {{ data.description }}
+                We are always up-to-date with the current trends and best practices in the Facility Management space.
+              </p>
+            </div>
+          </div>
+          <div class="flex w-full flex-col px-10  pt-5" >
+            <div class="flex-1">
+              <div class="flex items-center">
+                <h2 class="mt-4 text-2xl">Fully Compliant</h2>
+              </div>
+              <p class="text-gray-500 mt-5">
+               We strictly adhere to statutory compliance norms without compromising the quality of our services.
+               </p>
+            </div>
+          </div>
+          <div class="flex w-full flex-col px-10 pt-5" >
+            <div class="flex-1">
+              <div class="flex items-center">
+                <h2 class="mt-4 text-2xl">Trained Workforce</h2>
+              </div>
+              <p class="text-gray-500 mt-5">
+                Our employees/staff go through rigorous training before they are assigned to any project.
+              </p>
+            </div>
+          </div>
+          <div class="flex w-full flex-col px-10 lg:pl-0  pt-5" >
+            <div class="flex-1">
+              <div class="flex items-center">
+                <h2 class="mt-4 text-2xl">Sustainable Approach</h2>
+              </div>
+              <p class="text-gray-500 mt-5">
+                We believe in a better tomorrow therefore, we use sustainable technology, tools & equipment in the delivery of soft services.
+              </p>
+            </div>
+          </div>
+          <div class="flex w-full flex-col px-10  pt-5" >
+            <div class="flex-1">
+              <div class="flex items-center">
+                <h2 class="mt-4 text-2xl">Customized Solutions</h2>
+              </div>
+              <p class="text-gray-500 mt-5">
+                We offer tailored and innovative solutions to reach beyond your expectations.
               </p>
             </div>
           </div>
@@ -146,7 +181,7 @@
   </section>
 
   <section>
-    <div class="ontainer mx-auto md:px-16 py-10 md:py-20">
+    <div class="container mx-auto md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Vision</div>
@@ -174,7 +209,7 @@
   </section>
 
   <section class="bg-white">
-    <div class="ontainer mx-auto px-10 md:px-16 py-10 md:py-20">
+    <div class="container mx-auto md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Values</div>
@@ -213,8 +248,9 @@
     </div>
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
+
   <section class="bg-white">
-    <div class="container mx-auto px-10 md:px-32 py-20">
+    <div class="container mx-auto md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl">Our Leadership Team</div>
@@ -284,7 +320,7 @@
   </section>
 
   <section class="bg-white">
-    <div class="container mx-auto px-10 md:px-32 py-20">
+    <div class="container mx-auto md:px-16 py-10 md:py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Accreditations</div>
