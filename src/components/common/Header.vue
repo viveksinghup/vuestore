@@ -170,9 +170,12 @@ export default {
 @media screen and (max-width: 800px) {
   .mob-link {
     display: none;
+    padding-top: 5rem;
+    padding-left: 2rem;
   }
   .mob-link.active {
     display: flex;
+    min-height: calc(100vh - 50px);
   }
 }
 </style>

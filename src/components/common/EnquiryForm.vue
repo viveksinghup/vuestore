@@ -163,8 +163,8 @@
       </div>
 
       <fieldset class="relative z-0 w-full p-px mt-10">
-        <div class="block pt-3 pb-2 space-x-4 text-gray50">
-          <label class="text-xs">
+        <div class="block pt-3 text-xs pb-2 space-x-4 text-gray50">
+          <label class="text-base">
             <input
               type="checkbox"
               name="radio"
