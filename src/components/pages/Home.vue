@@ -61,8 +61,8 @@
         </div>
         <div
           class="
-            px-10 md:px-20
-            md:w-2/3
+            px-10
+            md:px-20 md:w-2/3
             flex-shrink-0
             text-lg
             md:text-2xl
@@ -88,21 +88,33 @@
         <div
           v-for="(data, index) in services"
           :key="index"
-          class="flex flex-col bg-opacity-20 bg-gray10 pl-14 pr-8 py-5"
+          class="flex flex-col group bg-opacity-20 bg-gray10 pl-14 pr-8 py-5"
         >
           <div class="flex-1">
             <div class="flex items-center">
               <h2 class="flex flex-col font-bold p-2 text-2xl mr-4">
-                0{{ index }}
+                0{{ index + 1 }}
               </h2>
               <h2 class="mt-4 font-bold text-xl">{{ data.title }}</h2>
             </div>
-            <div class="h-1 w-20 bg-darkBlue mt-4 mb-4"></div>
+            <div
+              class="
+                h-1
+                w-20
+                bg-yellow
+                transition
+                group-hover:bg-brandBlue
+                mt-4
+                mb-4
+              "
+            ></div>
             <p class="text-gray-500 text-left mt-3 pr-4">
               {{ data.description }}
             </p>
           </div>
-          <router-link to="/link"
+          <router-link
+            to="/link"
+            class="inline-block group-hover:ml-4 transition"
             ><img src="@/assets/images/arrow-blue.svg" class="w-10 my-6"
           /></router-link>
         </div>
@@ -233,6 +245,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="22.698"
                     height="15.063"
+                    class="flex-shrink-0"
                     viewBox="0 0 22.698 15.063"
                   >
                     <path
@@ -289,6 +302,13 @@
       </div>
   </div>
 
+  <!-- <marquee
+    scrollamount="2"
+    onmouseover="this.stop();"
+    onmouseout="this.start();"
+  >
+    <div><img src="@/assets/images/clients.png" /></div>
+  </marquee> -->
   <section>
     <div class="bg-opacity-20 bg-gray10">
       <div class="container mx-auto px-4">

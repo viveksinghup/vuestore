@@ -17,6 +17,7 @@ module.exports = {
         },
       },
       fontSize: {
+        '10': '10px',
         '24': '24px',
       },
       colors: {
