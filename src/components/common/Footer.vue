@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 px-27 my-10 md:my-20">
+  <div class="bg-gray-100 px-27 py-10 md:py-20 border-t border-gray10 border-opacity-50">
     <div
       class="
         max-w-6xl
@@ -28,8 +28,8 @@
             v-for="(data, index) in footerCol1"
             :key="index"
             class="my-3 block text-sm opacity-50"
-            href="/#"
-            >{{ data }}</a
+            :href="data.url"
+            >{{ data.title }}</a
           >
         </div>
         <div class="p-5 md:w-1/4">
@@ -38,8 +38,8 @@
             v-for="(data, index) in footerCol2"
             :key="index"
             class="my-3 block text-sm opacity-50"
-            href="/#"
-            >{{ data }}</a
+            :href="data.url"
+            >{{ data.title }}</a
           >
         </div>
         <div class="p-5 md:w-1/4">
@@ -83,29 +83,66 @@ export default {
   data() {
     return {
       footerCol1: [
-        "Profile",
-        "Our Edge",
-        "Vision & Mission",
-        "Values",
-        "Leadership Team",
-        "Accreditations",
-      ],
-      footerCol2: [
-        "Technical Solutions",
-        "Soft Service Solutions",
-        "Pest Management Solutions",
-        "Security Solutions",
-        "Specialised and Additional Service Solutions",
-      ],
-      footerCol3: [
-        { 
-          title: "Home",
-          url: '/'
+        {
+          title: "Your Facility Expert",
+          url: '/about'
         },
         {
-          title: "Services",
+          title: "Our Edge",
+          url: '/about'
+        },
+        {
+          title: "Mission",
+          url: '/about'
+        },
+        {
+          title: "Vision",
+          url: '/about'
+        },
+        {
+          title: "Our Values",
+          url: '/about'
+        },
+        {
+          title: "Our Leadership Team",
+          url: '/about'
+        },
+        {
+          title: "Our Accreditations",
+          url: '/about'
+        }
+      ],
+      footerCol2: [
+        {
+          title: "Service Offerings",
           url: '/services'
         },
+        {
+          title: "Technical Solutions",
+          url: '/services'
+        },
+        {
+          title: "Soft Service Solutions",
+          url: '/services'
+        },
+        {
+          title: "Pest Management Solutions",
+          url: '/services'
+        },
+        {
+          title: "Security Solutions",
+          url: '/services'
+        },
+        {
+          title: "Specialised Services Solutions",
+          url: '/services'
+        },
+        {
+          title: "Our Clients Say",
+          url: '/services'
+        }
+      ],
+      footerCol3: [
         {
           title: "FAQ`s",
           url: '/faq'
@@ -113,14 +150,6 @@ export default {
         {
           title: "Terms and Conditions",
           url: '/tnc'
-        },
-        {
-          title: "About Us",
-          url: '/about'
-        },
-        {
-          title: "Contact Us",
-          url: '/contact-us'
         }
         ],
     };

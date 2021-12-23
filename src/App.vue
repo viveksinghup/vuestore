@@ -1,9 +1,7 @@
 <template>
-  <div class="bg-gray">
-    <Header />
-    <router-view />
-    <Footer />
-  </div>
+  <Header />
+  <router-view />
+  <Footer />
 </template>
 
 <script>

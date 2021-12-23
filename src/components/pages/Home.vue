@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-opacity-50 bg-gray10">
+  <div class="bg-gray bg-opacity-50">
     <div class="container mx-auto px-4">
       <div
         class="
@@ -58,166 +58,172 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <section>
-    <div class="container mx-auto px-4 md:px-16 py-10 my-10">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
-        <div class="flex flex-col items-left md:w-1/2">
-          <div class="text-2xl md:text-5xl font-medium">Our Services</div>
-          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+    <section>
+      <div class="container mx-auto px-4 md:px-16 py-10 my-10">
+        <div class="flex flex-col text-center md:text-left md:flex-row">
+          <div class="flex flex-col items-left md:w-1/2">
+            <div class="text-2xl md:text-5xl font-medium">Our Services</div>
+            <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+          </div>
+          <div
+            class="
+              px-10
+              md:px-20 md:w-2/3
+              flex-shrink-0
+              text-lg
+              md:text-2xl
+              mt-10
+              md:mt-20
+            "
+          >
+            Bringing you the finest facility management solutions for a better
+            and healthier working environment with our expertise and experience.
+          </div>
         </div>
+
         <div
           class="
-            px-10
-            md:px-20 md:w-2/3
-            flex-shrink-0
-            text-lg
-            md:text-2xl
-            mt-10
-            md:mt-20
+            grid grid-cols-1
+            sm:grid-cols-1
+            md:grid-cols-2
+            xl:grid-cols-3
+            gap-4
+            mt-16
           "
         >
-          Bringing you the finest facility management solutions for a better and
-          healthier working environment with our expertise and experience.
+          <div
+            v-for="(data, index) in services"
+            :key="index"
+            class="flex flex-col group bg-opacity-20 bg-gray10 pl-14 pr-8 py-5"
+          >
+            <div class="flex-1">
+              <div class="flex items-center">
+                <h2 class="flex flex-col font-bold p-2 text-2xl mr-4">
+                  0{{ index + 1 }}
+                </h2>
+                <h2 class="mt-4 font-bold text-xl">{{ data.title }}</h2>
+              </div>
+              <div
+                class="
+                  h-1
+                  w-20
+                  bg-yellow
+                  transition
+                  group-hover:bg-brandBlue
+                  mt-4
+                  mb-4
+                "
+              ></div>
+              <p class="text-gray-500 text-left mt-3 pr-4">
+                {{ data.description }}
+              </p>
+            </div>
+            <router-link
+              to="/link"
+              class="inline-block group-hover:ml-4 transition"
+              ><img src="@/assets/images/arrow-blue.svg" class="w-10 my-6"
+            /></router-link>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div
-        class="
-          grid grid-cols-1
-          sm:grid-cols-1
-          md:grid-cols-2
-          xl:grid-cols-3
-          gap-4
-          mt-16
-        "
-      >
-        <div
-          v-for="(data, index) in services"
-          :key="index"
-          class="flex flex-col group bg-opacity-20 bg-gray10 pl-14 pr-8 py-5"
-        >
-          <div class="flex-1">
-            <div class="flex items-center">
-              <h2 class="flex flex-col font-bold p-2 text-2xl mr-4">
-                0{{ index + 1 }}
-              </h2>
-              <h2 class="mt-4 font-bold text-xl">{{ data.title }}</h2>
+    <div class="py-20 relative overflow-hidden">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex md:flex-row items-center flex-col">
+          <div class="md:w-1/2">
+            <div
+              class="
+                text-2xl text-center
+                md:text-left md:text-5xl md:pr-32
+                form-heading
+                mb-10
+                md:mb-0
+              "
+            >
+              Get a free consultation from top industry professionals and manage
+              your facility with ease and perfection.
+            </div>
+            <div class="h-2 w-16 hidden md:flex bg-brandBlue mt-5 mb-4"></div>
+          </div>
+          <div class="md:w-1/2">
+            <EnquiryForm></EnquiryForm>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row mt-10 md:pt-48 pb-20 md:pb-28">
+            <div class="lg:w-1/2 px-10 md:pr-0 md:pl-32 mb-10 md:mb-0">
+              <img
+                src="@/assets/images/backgorund/cust-info.png"
+                class="max-w-full md:pr-10 assets"
+              />
             </div>
             <div
               class="
-                h-1
-                w-20
-                bg-yellow
-                transition
-                group-hover:bg-brandBlue
-                mt-4
-                mb-4
+                flex
+                items-center
+                text-center
+                lg:text-left lg:w-1/2
+                md:pl-20
               "
-            ></div>
-            <p class="text-gray-500 text-left mt-3 pr-4">
-              {{ data.description }}
-            </p>
-          </div>
-          <router-link
-            to="/link"
-            class="inline-block group-hover:ml-4 transition"
-            ><img src="@/assets/images/arrow-blue.svg" class="w-10 my-6"
-          /></router-link>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="my-20 relative overflow-hidden">
-    <div class="container mx-auto px-6 md:px-20">
-      <div class="flex md:flex-row items-center flex-col">
-        <div class="md:w-1/2">
-          <div
-            class="
-              text-2xl text-center
-              md:text-left md:text-5xl md:pr-32
-              form-heading
-              mb-10
-              md:mb-0
-            "
-          >
-            Get a free consultation from top industry professionals and manage
-            your facility with ease and perfection.
-          </div>
-          <div class="h-2 w-16 hidden md:flex bg-brandBlue mt-5 mb-4"></div>
-        </div>
-        <div class="md:w-1/2">
-          <EnquiryForm></EnquiryForm>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section>
-    <div class="my-20 relative overflow-hidden">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row mt-10 md:pt-48 pb-20 md:pb-28">
-          <div class="lg:w-1/2 px-10 md:pr-0 md:pl-32 mb-10 md:mb-0">
-            <img
-              src="@/assets/images/backgorund/cust-info.png"
-              class="max-w-full md:pr-10 assets"
-            />
-          </div>
-          <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 md:pl-20"
-          >
-            <div>
-              <div class="text-xl md:text-3xl">
-                Customer-centric solutions by Maven are powered by our
-                experience + expertise approach, a unique combination of best
-                industry practices with specialized solutions. Our solution
-                driven methodology delivers increased productivity and provides
-                the right ambiance for employees, visitors, and potential
-                clients.
-              </div>
-              <div class="flex justify-center lg:justify-start mt-6">
-                <router-link
-                  to="/link"
-                  class="
-                    px-9
-                    py-3.5
-                    leading-8
-                    font-medium
-                    bg-brandBlue
-                    text-white
-                    transition
-                    flex
-                    items-center
-                  "
-                  >Explore More
-                  <span class="pl-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      />
-                    </svg>
-                  </span>
-                </router-link>
+            >
+              <div>
+                <div class="text-xl md:text-3xl">
+                  Customer-centric solutions by Maven are powered by our
+                  experience + expertise approach, a unique combination of best
+                  industry practices with specialized solutions. Our solution
+                  driven methodology delivers increased productivity and
+                  provides the right ambiance for employees, visitors, and
+                  potential clients.
+                </div>
+                <div class="flex justify-center lg:justify-start mt-6">
+                  <router-link
+                    to="/link"
+                    class="
+                      px-9
+                      py-3.5
+                      leading-8
+                      font-medium
+                      bg-brandBlue
+                      text-white
+                      transition
+                      flex
+                      items-center
+                    "
+                    >Explore More
+                    <span class="pl-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        />
+                      </svg>
+                    </span>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <section>
-    <div class="mt-20 bg-black relative overflow-hidden">
+    <div class="bg-black relative overflow-hidden">
       <div class="container mx-auto px-10 md:px-4">
         <div
           class="
@@ -279,54 +285,67 @@
     <img src="@/assets/images/home-coverimg.png" class="w-full h-auto assets" />
   </section>
 
-  <section>
-    <div class="container mx-auto md:px-20 py-10 md:my-20">
-      <div class="flex flex-col items-center px-10 md:px-40">
-        <div class="relative text-lg md:text-4xl text-left md:p-10 w-full m-1">
-          <img
-            src="@/assets/images/comma.png"
-            class="hidden md:block w-16 absolute -m-16 -mt-10 my-6 assets"
-          />
-          The FM industry is dynamically changing with unpredictable
-          fluctuations and advancing technologies. The need for facility
-          management has surged with the need for a virus-free and healthy
-          ambience.
+  <div class="bg-white">
+    <section>
+      <div class="container mx-auto md:px-20 py-10 md:my-20">
+        <div class="flex flex-col items-center px-10 md:px-40">
+          <div
+            class="relative text-lg md:text-4xl text-left md:p-10 w-full m-1"
+          >
+            <img
+              src="@/assets/images/comma.png"
+              class="hidden md:block w-16 absolute -m-16 -mt-10 my-6 assets"
+            />
+            The FM industry is dynamically changing with unpredictable
+            fluctuations and advancing technologies. The need for facility
+            management has surged with the need for a virus-free and healthy
+            ambience.
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Our Clients -->
-  <section>
-    <div
-      class="
-        container
-        mx-auto
-        px-4
-        border-t border-gray10 border-opacity-50
-        py-10
-        my-10
-      "
-    >
-      <div class="flex flex-col items-center">
-        <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
-        <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
+    <!-- Our Clients -->
+    <section>
+      <div
+        class="
+          container
+          mx-auto
+          px-4
+          border-t border-gray10 border-opacity-50
+          pt-10
+          md:pt-20
+        "
+      >
+        <div class="flex flex-col items-center">
+          <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
+          <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
+        </div>
+        <div class="py-20">
+          <marquee
+            behavior="alternate"
+            direction="left"
+            onmouseover="this.stop();"
+            onmouseout="this.start();"
+            repeat="yes"
+            scrollamount="5"
+            loop="3"
+          >
+            <div class="flex space-x-5 w-full">
+              <div><img src="@/assets/images/logo1.png" /></div>
+              <div><img src="@/assets/images/logo3.png" /></div>
+              <div><img src="@/assets/images/logo4.png" /></div>
+              <div><img src="@/assets/images/logo5.png" /></div>
+              <div><img src="@/assets/images/logo6.png" /></div>
+              <div><img src="@/assets/images/logo22.png" /></div>
+            </div>
+          </marquee>
+        </div>
       </div>
-      <div class="flex justify-center assets">
-        <img src="@/assets/images/clients.png" />
-      </div>
-    </div>
-  </section>
-
-  <!-- <marquee
-    scrollamount="2"
-    onmouseover="this.stop();"
-    onmouseout="this.start();"
-  >
-    <div><img src="@/assets/images/clients.png" /></div>
-  </marquee> -->
+    </section>
+  </div>
   <section>
-    <div class="bg-opacity-20 bg-gray10">
+    <div class="bg-opacity-50 bg-gray">
       <div class="container mx-auto px-4">
         <div class="flex md:px-10 py-20 flex-col-reverse md:flex-row">
           <div
