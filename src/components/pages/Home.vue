@@ -20,19 +20,15 @@
             <h2 class="text-4xl font-semibold md:text-7xl">
               Your Facility Experts
             </h2>
-            <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
+            <div class="h-2 md:w-16 bg-brandBlue my-10"></div>
             <div class="mt-2 text-sm md:text-lg">
               We are a full-fledged facility management company based in India.
               Our offerings include comprehensive facility management solutions
               to meet the growing demands for a better and healthier working
               environment.
             </div>
-            <div class="flex justify-center lg:justify-start mt-6">
-              <a
-                class="
-                  px-7
-                  py-2
-                  leading-8
+            <div class="flex justify-center lg:justify-start mt-7">
+              <a class="px-7 py-2 leading-8
                   font-medium
                   rounded
                   border-2 border-brandBlue
@@ -40,11 +36,7 @@
                   hover:bg-brandBlue hover:text-white
                   transition
                   flex
-                  items-center
-                "
-                href="#"
-                >Know More</a
-              >
+                  items-center" href="#" >Know More</a>
             </div>
           </div>
         </div>
@@ -242,7 +234,7 @@
                   Why Choose Maven For Your Facility Needs?
                 </h2>
                 <div
-                  class="h-2 hidden md:block w-24 bg-brandBlue mt-5 mb-4"
+                  class="h-2 hidden md:block w-24 bg-brandBlue mt-10"
                 ></div>
               </div>
             </div>
@@ -251,7 +243,7 @@
             class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-32"
           >
             <div>
-              <ul class="list list-outside space-y-5 md:space-y-10">
+              <ul class="list list-outside space-y-7 md:space-y-14">
                 <li
                   class="flex md:items-center"
                   v-for="(data, index) in textList"
