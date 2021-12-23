@@ -128,7 +128,7 @@
       </div>
     </section>
 
-    <div class="pt-20 md:pt-48 relative overflow-hidden">
+    <div class="pt-20 pb-5 md:pt-48 relative overflow-hidden">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex md:flex-row items-center flex-col">
           <div class="md:w-1/2">
