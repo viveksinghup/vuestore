@@ -1,58 +1,65 @@
 <template>
   <div class="bg-gray bg-opacity-50">
-    <div class="container mx-auto px-4">
-      <div
-        class="
-          flex flex-col-reverse
-          md:flex-row
-          pt-32
-          md:pt-40
-          pb-16
-          md:pb-16
-          px-6
-          md:px-20
-        "
-      >
+    <section class="bg-gray10 bg-opacity-50">
+      <div class="container mx-auto px-4">
         <div
-          class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
+          class="
+            flex flex-col-reverse
+            md:flex-row
+            pt-32
+            pb-16
+            md:pb-16
+            px-6
+            md:px-0
+          "
         >
-          <div>
-            <h2 class="text-4xl font-semibold md:text-7xl">
-              Your Facility Experts
-            </h2>
-            <div class="h-2 md:w-16 bg-brandBlue my-10"></div>
-            <div class="mt-2 text-sm md:text-lg">
-              We are a full-fledged facility management company based in India.
-              Our offerings include comprehensive facility management solutions
-              to meet the growing demands for a better and healthier working
-              environment.
-            </div>
-            <div class="flex justify-center lg:justify-start mt-7">
-              <a class="px-7 py-2 leading-8
-                  font-medium
-                  rounded
-                  border-2 border-brandBlue
-                  text-brandBlue
-                  hover:bg-brandBlue hover:text-white
-                  transition
-                  flex
-                  items-center" href="#" >Know More</a>
+          <div class="flex items-center text-center lg:text-left lg:w-2/5">
+            <div>
+              <h2 class="text-4xl font-semibold md:text-7xl">
+                Your Facility Experts
+              </h2>
+              <div class="h-2 md:w-16 bg-brandBlue my-10"></div>
+              <div class="mt-2 text-sm md:text-lg">
+                We are a full-fledged facility management company based in
+                India. Our offerings include comprehensive facility management
+                solutions to meet the growing demands for a better and healthier
+                working environment.
+              </div>
+              <div class="flex justify-center lg:justify-start mt-7">
+                <a
+                  class="
+                    px-7
+                    py-2
+                    leading-8
+                    font-medium
+                    rounded
+                    border-2 border-brandBlue
+                    text-brandBlue
+                    hover:bg-brandBlue hover:text-white
+                    transition
+                    flex
+                    items-center
+                  "
+                  href="#"
+                  >Know More</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="lg:w-1/2">
-          <div class="h-full md:mb-0 mb-10 assets">
-            <img
-              src="@/assets/images/backgorund/hero-img.png"
-              class="max-w-full"
-            />
+          <div class="lg:w-3/5 flex justify-center">
+            <div class="h-full md:mb-0 mb-10 assets">
+              <img
+                src="@/assets/images/backgorund/hero-img.png"
+                class="max-w-full"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <section>
-      <div class="container mx-auto px-4 md:px-16 py-10 my-10">
+    <section class="py-10">
+      <div class="container mx-auto px-4">
         <div class="flex flex-col text-center md:text-left md:flex-row">
           <div class="flex flex-col items-left md:w-1/2">
             <div class="text-2xl md:text-5xl font-medium">Our Services</div>
@@ -66,7 +73,7 @@
               text-lg
               md:text-2xl
               mt-10
-              md:mt-20
+              md:mt-28
             "
           >
             Bringing you the finest facility management solutions for a better
@@ -81,13 +88,13 @@
             md:grid-cols-2
             xl:grid-cols-3
             gap-4
-            mt-16
+            mt-24
           "
         >
           <div
             v-for="(data, index) in services"
             :key="index"
-            class="flex flex-col group bg-opacity-20 bg-gray10 pl-14 pr-8 py-5"
+            class="flex card flex-col group bg-gray pl-14 pr-8 py-5"
           >
             <div class="flex-1">
               <div class="flex items-center">
@@ -111,17 +118,17 @@
                 {{ data.description }}
               </p>
             </div>
-            <router-link
-              to="/link"
-              class="inline-block group-hover:ml-4 transition"
-              ><img src="@/assets/images/arrow-blue.svg" class="w-10 my-6"
+            <router-link to="/link" class="inline-block transition"
+              ><img
+                src="@/assets/images/arrow-blue.svg"
+                class="w-10 card-arrow my-6"
             /></router-link>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="py-20 relative overflow-hidden">
+    <div class="pt-20 md:pt-48 relative overflow-hidden">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex md:flex-row items-center flex-col">
           <div class="md:w-1/2">
@@ -146,67 +153,59 @@
       </div>
     </div>
 
-    <section>
-      <div class="py-20 relative overflow-hidden">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-col md:flex-row mt-10 md:pt-48 pb-20 md:pb-28">
-            <div class="lg:w-1/2 px-10 md:pr-0 md:pl-32 mb-10 md:mb-0">
-              <img
-                src="@/assets/images/backgorund/cust-info.png"
-                class="max-w-full md:pr-10 assets"
-              />
-            </div>
-            <div
-              class="
-                flex
-                items-center
-                text-center
-                lg:text-left lg:w-1/2
-                md:pl-20
-              "
-            >
-              <div>
-                <div class="text-xl md:text-3xl">
-                  Customer-centric solutions by Maven are powered by our
-                  experience + expertise approach, a unique combination of best
-                  industry practices with specialized solutions. Our solution
-                  driven methodology delivers increased productivity and
-                  provides the right ambiance for employees, visitors, and
-                  potential clients.
-                </div>
-                <div class="flex justify-center lg:justify-start mt-6">
-                  <router-link
-                    to="/link"
-                    class="
-                      px-9
-                      py-3.5
-                      leading-8
-                      font-medium
-                      bg-brandBlue
-                      text-white
-                      transition
-                      flex
-                      items-center
-                    "
-                    >Explore More
-                    <span class="pl-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                      </svg>
-                    </span>
-                  </router-link>
-                </div>
+    <section class="relative overflow-hidden py-64">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row">
+          <div class="lg:lg:w-2/5 px-10 md:pr-0 md:pl-0 mb-10 md:mb-0">
+            <img
+              src="@/assets/images/backgorund/cust-info.png"
+              class="max-w-full md:pr-10 assets"
+            />
+          </div>
+          <div
+            class="flex items-center text-center lg:text-left lg:w-3/5 md:pl-20"
+          >
+            <div>
+              <div class="text-xl md:text-3xl">
+                Customer-centric solutions by Maven are powered by our
+                experience + expertise approach, a unique combination of best
+                industry practices with specialized solutions. Our solution
+                driven methodology delivers increased productivity and provides
+                the right ambiance for employees, visitors, and potential
+                clients.
+              </div>
+              <div class="flex justify-center lg:justify-start mt-10">
+                <router-link
+                  to="/link"
+                  class="
+                    px-9
+                    py-3.5
+                    leading-8
+                    font-medium
+                    bg-brandBlue
+                    text-white
+                    transition
+                    flex
+                    items-center
+                  "
+                  >Explore More
+                  <span class="pl-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </span>
+                </router-link>
               </div>
             </div>
           </div>
@@ -222,28 +221,24 @@
             flex flex-col
             md:flex-row
             py-20
-            md:py-48
+            md:py-48 md:px-20
             items-center
             text-white
           "
         >
-          <div class="lg:w-1/2 md:pl-32">
+          <div class="lg:w-1/2">
             <div class="flex items-center lg:text-left md:pr-20">
               <div>
                 <h2 class="text-2xl font-semi md:text-7xl mb-10 md:mb-0">
                   Why Choose Maven For Your Facility Needs?
                 </h2>
-                <div
-                  class="h-2 hidden md:block w-24 bg-brandBlue mt-10"
-                ></div>
+                <div class="h-2 hidden md:block w-24 bg-brandBlue mt-10"></div>
               </div>
             </div>
           </div>
-          <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-32"
-          >
+          <div class="flex items-center text-center lg:text-left lg:w-1/2">
             <div>
-              <ul class="list list-outside space-y-7 md:space-y-14">
+              <ul class="list list-outside space-y-8 md:space-y-16">
                 <li
                   class="flex md:items-center"
                   v-for="(data, index) in textList"
@@ -273,16 +268,19 @@
       </div>
     </div>
   </section>
-  <section>
-    <img src="@/assets/images/home-coverimg.png" class="w-full h-auto assets" />
+  <section class="overflow-hidden h-96">
+    <img
+      src="@/assets/images/home-coverimg.png"
+      class="w-full object-cover h-full assets"
+    />
   </section>
 
   <div class="bg-white">
     <section>
-      <div class="container mx-auto md:px-20 py-10 md:my-20">
+      <div class="container mx-auto md:px-20 pt-10 md:pt-40 pb-10 md:pb-12">
         <div class="flex flex-col items-center px-10 md:px-40">
           <div
-            class="relative text-lg md:text-4xl text-left md:p-10 w-full m-1"
+            class="relative text-lg md:text-4xl quote-text text-left md:p-10 w-full m-1"
           >
             <img
               src="@/assets/images/comma.png"
@@ -306,14 +304,14 @@
           px-4
           border-t border-gray10 border-opacity-50
           pt-10
-          md:pt-20
+          md:pt-24
         "
       >
         <div class="flex flex-col items-center">
           <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
           <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
         </div>
-        <div class="py-20">
+        <div class="py-10">
           <marquee
             behavior="alternate"
             direction="left"
@@ -336,19 +334,19 @@
       </div>
     </section>
   </div>
-  <section>
+  <section class="mt-28">
     <div class="bg-opacity-50 bg-gray">
       <div class="container mx-auto px-4">
-        <div class="flex md:px-10 py-20 flex-col-reverse md:flex-row">
+        <div class="flex py-20 flex-col-reverse md:flex-row">
           <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
+            class="flex items-center text-center lg:text-left lg:w-2/5 md:pr-20"
           >
             <div>
               <h2 class="text-xl md:text-6xl">
                 Business Segments We Operate In
               </h2>
               <div
-                class="h-2 w-16 hidden md:block bg-brandBlue mt-5 mb-4"
+                class="h-2 w-16 hidden md:block bg-brandBlue my-10"
               ></div>
               <div class="mt-2 text-sm md:text-lg">
                 We offer extensive facility management services in different
@@ -359,7 +357,7 @@
               </div>
             </div>
           </div>
-          <div class="lg:w-1/2">
+          <div class="lg:w-3/5">
             <div class="w-100 h-full mb-10 md:mb-0">
               <img
                 src="@/assets/images/backgorund/business.png"
@@ -429,6 +427,19 @@ export default {
 <style lang="postcss" scoped>
 .form-heading {
   line-height: 62px;
+}
+.card-arrow {
+  transition: 0.45s;
+  transform: scale3d(1, 1, 1);
+}
+.card:hover .card-arrow {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+.quote-text{
+  line-height: 50px;
+}
+.bussiness-img{
+  max-height: 900px;
 }
 @media screen and (max-width: 800px) {
   .form-heading {

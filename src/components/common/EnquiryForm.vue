@@ -4,7 +4,7 @@
       mx-auto
       max-w-md
       px-10
-      py-12
+      py-8
       bg-white
       text-black
       border-0
@@ -12,7 +12,7 @@
       sm:rounded-3xl
     "
   >
-    <h1 class="text-2xl font-medium mb-8">Get In Touch</h1>
+    <h1 class="text-2xl font-medium mb-6">Get In Touch</h1>
     <form id="form" novalidate>
       <div class="relative z-0 w-full mb-8">
         <input
