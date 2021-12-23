@@ -20,19 +20,15 @@
             <h2 class="text-4xl font-semibold md:text-7xl">
               Your Facility Experts
             </h2>
-            <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
+            <div class="h-2 md:w-16 bg-brandBlue my-10"></div>
             <div class="mt-2 text-sm md:text-lg">
               We are a full-fledged facility management company based in India.
               Our offerings include comprehensive facility management solutions
               to meet the growing demands for a better and healthier working
               environment.
             </div>
-            <div class="flex justify-center lg:justify-start mt-6">
-              <a
-                class="
-                  px-7
-                  py-2
-                  leading-8
+            <div class="flex justify-center lg:justify-start mt-7">
+              <a class="px-7 py-2 leading-8
                   font-medium
                   rounded
                   border-2 border-brandBlue
@@ -40,11 +36,7 @@
                   hover:bg-brandBlue hover:text-white
                   transition
                   flex
-                  items-center
-                "
-                href="#"
-                >Know More</a
-              >
+                  items-center" href="#" >Know More</a>
             </div>
           </div>
         </div>
@@ -61,11 +53,11 @@
   </div>
 
   <section>
-    <div class="container mx-auto px-4 md:px-16 py-10 my-10">
+    <div class="container mx-auto px-4 md:px-16 my-12">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Services</div>
-          <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+          <div class="h-0.5 hidden md:flex w-96 bg-black mt-10"></div>
         </div>
         <div
           class="
@@ -90,7 +82,7 @@
           md:grid-cols-2
           xl:grid-cols-3
           gap-4
-          mt-16
+          mt-10
         "
       >
         <div
@@ -118,7 +110,7 @@
     </div>
   </section>
 
-  <div class="my-20 relative overflow-hidden">
+  <div class="my-28 relative overflow-hidden">
     <div class="container mx-auto px-6 md:px-20">
       <div class="flex md:flex-row items-center flex-col">
         <div class="md:w-1/2">
@@ -143,10 +135,9 @@
     </div>
   </div>
 
-  <section>
-    <div class="my-20 relative overflow-hidden">
+  <div class="my-28 relative overflow-hidden">
       <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row mt-10 md:pt-48 pb-20 md:pb-28">
+        <div class="flex flex-col md:flex-row">
           <div class="lg:w-1/2 px-10 md:pr-0 md:pl-32 mb-10 md:mb-0">
             <img
               src="@/assets/images/backgorund/cust-info.png"
@@ -202,10 +193,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="mt-20 bg-black relative overflow-hidden">
+  </div>
+  
+  <div class="mt-28 bg-black relative overflow-hidden">
       <div class="container mx-auto px-10 md:px-4">
         <div
           class="
@@ -224,7 +214,7 @@
                   Why Choose Maven For Your Facility Needs?
                 </h2>
                 <div
-                  class="h-2 hidden md:block w-24 bg-brandBlue mt-5 mb-4"
+                  class="h-2 hidden md:block w-24 bg-brandBlue mt-10"
                 ></div>
               </div>
             </div>
@@ -233,7 +223,7 @@
             class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-32"
           >
             <div>
-              <ul class="list list-outside space-y-5 md:space-y-10">
+              <ul class="list list-outside space-y-7 md:space-y-14">
                 <li
                   class="flex md:items-center"
                   v-for="(data, index) in textList"
@@ -260,14 +250,13 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+  </div>
+  
   <section>
     <img src="@/assets/images/home-coverimg.png" class="w-full h-auto assets" />
   </section>
 
-  <section>
-    <div class="container mx-auto md:px-20 py-10 md:my-20">
+  <div class="container mx-auto md:px-20 py-12 md:my-20">
       <div class="flex flex-col items-center px-10 md:px-40">
         <div class="relative text-lg md:text-4xl text-left md:p-10 w-full m-1">
           <img
@@ -280,30 +269,25 @@
           ambience.
         </div>
       </div>
-    </div>
-  </section>
+  </div>
 
   <!-- Our Clients -->
-  <section>
-    <div
-      class="
+  <div class="
         container
         mx-auto
         px-4
         border-t border-gray10 border-opacity-50
-        py-10
-        my-10
+        mb-28
       "
     >
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center mt-28">
         <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
-        <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
+        <div class="h-1 w-16 bg-darkBlue my-10"></div>
       </div>
       <div class="flex justify-center assets">
         <img src="@/assets/images/clients.png" />
       </div>
-    </div>
-  </section>
+  </div>
 
   <section>
     <div class="bg-opacity-20 bg-gray10">

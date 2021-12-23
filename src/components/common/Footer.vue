@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 px-27 my-10 md:my-20">
+  <div class="bg-white-100 px-27 my-10 md:my-20">
     <div
       class="
         max-w-6xl
