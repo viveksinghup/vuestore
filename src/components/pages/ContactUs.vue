@@ -1,35 +1,34 @@
 <template>
-  <section>
-    <div class="bg-opacity-50 bg-gray10">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-col-reverse
+  <section class="bg-gray10 bg-opacity-50">
+    <div class="container mx-auto px-4">
+      <div
+        class="
+          flex flex-col-reverse
           md:flex-row
           pt-32
-          md:pt-40
           pb-16
           md:pb-16
           px-6
-          md:px-20"
+          md:px-0
+        "
+      >
+        <div
+          class="flex items-center text-center lg:text-left lg:w-2/5"
         >
-          <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
-          >
-            <div>
-              <h2 class="text-4xl font-semibold md:text-7xl">
-                We Will Take Care Of Your Facility
-              </h2>
-              <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
-              <p>We operate PAN India.</p>
-            </div>
+          <div>
+            <h2 class="text-4xl font-semibold md:text-7xl">
+              We Will Take Care Of Your Facility
+            </h2>
+            <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
+            <p>We operate PAN India.</p>
           </div>
-          <div class="lg:w-1/2">
-            <div class="h-full md:mb-0 mb-10">
-              <img
-                src="@/assets/images/backgorund/contact-hero.png"
-                class="max-w-full assets"
-              />
-            </div>
+        </div>
+        <div class="lg:w-3/5">
+          <div class="h-full md:mb-0 mb-10">
+            <img
+              src="@/assets/images/backgorund/contact-hero.png"
+              class="max-w-full assets"
+            />
           </div>
         </div>
       </div>
@@ -84,10 +83,10 @@
     </div>
   </section>
 
-  <section>
+  <section class="overflow-hidden h-52 md:h-96">
     <img
       src="@/assets/images/backgorund/pexels-scott.png"
-      class="w-full h-auto assets"
+      class="w-full object-cover h-full assets"
     />
   </section>
 </template>

@@ -268,7 +268,7 @@
       </div>
     </div>
   </section>
-  <section class="overflow-hidden h-96">
+  <section class="overflow-hidden h-52 md:h-96">
     <img
       src="@/assets/images/home-coverimg.png"
       class="w-full object-cover h-full assets"

@@ -1,44 +1,41 @@
 <template>
-  <section>
-    <div class="bg-opacity-50 bg-gray10">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-col-reverse
+  <section class="bg-gray10 bg-opacity-50">
+    <div class="container mx-auto px-4">
+      <div
+        class="flex flex-col-reverse
           md:flex-row
           pt-32
-          md:pt-40
           pb-16
           md:pb-16
           px-6
-          md:px-20"
+          md:px-0"
+      >
+        <div
+          class="flex items-center text-center lg:text-left lg:w-2/5"
         >
-          <div
-            class="flex items-center text-center lg:text-left lg:w-1/2 md:pr-20"
-          >
-            <div>
-              <h2 class="text-4xl font-semibold md:text-7xl">
-                Your Management Solution
-              </h2>
-              <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
-              <p>
-                Maven is one of India's leading companies in the Integrated Facility Management Services (IFMS) segment. providing customised solutions for clients.
-              </p>
-            </div>
+          <div>
+            <h2 class="text-4xl font-semibold md:text-7xl">
+              Your Management Solution
+            </h2>
+            <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
+            <p>
+              Maven is one of India's leading companies in the Integrated Facility Management Services (IFMS) segment. providing customised solutions for clients.
+            </p>
           </div>
-          <div class="lg:w-1/2">
-            <div class="h-full md:mb-0 mb-10">
-              <img
-                src="@/assets/images/backgorund/services-hero.png"
-                class="max-w-full assets"
-              />
-            </div>
+        </div>
+        <div class="lg:w-3/5">
+          <div class="h-full md:mb-0 mb-10">
+            <img
+              src="@/assets/images/backgorund/services-hero.png"
+              class="max-w-full assets"
+            />
           </div>
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="container mx-auto md:px-16 py-20">
+    <div class="container mx-auto px-5 py-20">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Service Offerings</div>
@@ -62,9 +59,9 @@
    <img src="@/assets/images/backgorund/lightbulbs-blue-background.png" class="w-full h-auto assets" />
   </section>
   <section class="bg-brandBlue">
-    <div class="container bg-brandBlue text-white mx-auto md:px-16 py-28">
+    <div class="container bg-brandBlue text-white mx-auto py-28">
       <div class="flex flex-col text-center md:text-left md:flex-row">
-        <div class="flex flex-col items-left md:w-1/2 px-5 md:px-20 flex-shrink-0">
+        <div class="flex flex-col items-left md:w-1/2 px-5 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">Technical Solutions</div>
           <div class="h-0.5 hidden md:flex bg-white mt-6 mb-4"></div>
           <p class="mt-7">
@@ -114,13 +111,13 @@
     </div>
   </section>
   <section>
-    <div class="container mx-auto px-5 md:px-16 md:py-10">
+    <div class="container mx-auto px-5 md:py-10">
       <div class="flex text-center md:text-left md:flex-row mt-12">
         <div class="flex flex-col items-left md:w-1/2">
-          <div class="text-2xl md:text-5xl pb-10">Soft Service Solutions</div>
+          <div class="text-2xl md:text-5xl pb-10">Soft Service <br/> Solutions</div>
         </div>
       </div>
-      <div class="border-t-2 border-black border-solid">
+      <div class="border-t-2 border-black -mx-5 border-solid">
         <div
           class="
             grid grid-cols-1
@@ -129,7 +126,7 @@
             xl:grid-cols-2
             pt-10
           ">
-          <div class="flex flex-col px-10 py-5">
+          <div class="flex flex-col px-5 py-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h3 class="flex flex-col font-bold text-darkBlue text-xl mr-4">
@@ -146,7 +143,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-col px-10 py-5">
+          <div class="flex flex-col px-5 py-5">
             <div class="flex-1">
               <div class="w-80 h-full">
                 <img
@@ -156,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-col px-10 py-5">
+          <div class="flex flex-col px-5 py-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h3 class="flex flex-col font-bold text-darkBlue text-xl mr-4">
@@ -169,7 +166,7 @@
               Our pantry management staff is highly trained to manage, supervise and organize your pantry needs. At Maven we make sure your employees are savouring food and producing results with our organised pantry services.</p>
             </div>
           </div>
-          <div class="flex flex-col px-10 py-5">
+          <div class="flex flex-col px-5 py-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h3 class="flex flex-col font-bold text-darkBlue text-xl mr-4">
@@ -187,7 +184,7 @@
     </div>
   </section>
   <section class="bg-darkBlue">
-    <div class="container bg-darkBlue text-white mx-auto px-5 md:px-16 py-16 md:py-32">
+    <div class="container bg-darkBlue text-white mx-auto px-5 py-16 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Pest Management Solutions</div>
@@ -259,11 +256,11 @@
       </div>
     </div>
   </section>
-  <section>
-   <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full h-auto assets" />
+  <section class="overflow-hidden h-52 md:h-96">
+   <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full object-cover h-full assets" />
   </section>
   <section class="bg-black">
-    <div class="container text-white mx-auto px-5 md:px-16 py-10">
+    <div class="container text-white mx-auto px-5 py-10">
       <div class="flex text-center md:text-left md:flex-row mt-20">
         <div class="flex flex-col items-left md:w-1/">
           <div class="text-2xl md:text-5xl font-medium">Specialised Services Solutions</div>
@@ -275,10 +272,10 @@
             grid grid-cols-1
             sm:grid-cols-1
             md:grid-cols-2
-            xl:grid-cols-2
+            xl:grid-cols-2 -mx-16
             "
             >
-            <div v-for="(data,index) in solutions" :key="index" class="flex flex-col px-14 pt-10">
+            <div v-for="(data,index) in solutions" :key="index" class="flex flex-col px-16 pt-10">
               <div class="flex-1">
                 <div class="flex items-center">
                   <h3 class="flex flex-col font-bold text-yellow text-xl mr-4">
