@@ -256,7 +256,7 @@
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-white overflow-hidden">
     <div class="container mx-auto md:px-16 py-10 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">

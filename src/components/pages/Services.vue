@@ -259,7 +259,7 @@
   <section class="overflow-hidden h-52 md:h-96">
    <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full object-cover h-full assets" />
   </section>
-  <section class="bg-black">
+  <section class="bg-black overflow-hidden">
     <div class="container text-white mx-auto px-5 py-10">
       <div class="flex text-center md:text-left md:flex-row mt-20">
         <div class="flex flex-col items-left md:w-1/">
