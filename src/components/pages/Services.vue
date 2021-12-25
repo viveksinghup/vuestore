@@ -35,7 +35,7 @@
     </div>
   </section>
   <section>
-    <div class="container mx-auto px-5 py-20">
+    <div class="container mx-auto px-5 py-10 md:py-32" id="service">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Service Offerings</div>
@@ -59,7 +59,7 @@
    <img src="@/assets/images/backgorund/lightbulbs-blue-background.png" class="w-full h-auto assets" />
   </section>
   <section class="bg-brandBlue">
-    <div class="container bg-brandBlue text-white mx-auto py-28">
+    <div class="container bg-brandBlue text-white mx-auto py-20 md:py-32" id="techsolution">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2 px-5 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">Technical Solutions</div>
@@ -111,7 +111,7 @@
     </div>
   </section>
   <section>
-    <div class="container mx-auto px-5 md:py-10">
+    <div class="container mx-auto px-5 py-10 md:py-24" id="softsolution">
       <div class="flex text-center md:text-left md:flex-row mt-12">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl pb-10">Soft Service <br/> Solutions</div>
@@ -184,7 +184,7 @@
     </div>
   </section>
   <section class="bg-darkBlue">
-    <div class="container bg-darkBlue text-white mx-auto px-5 py-16 md:py-32">
+    <div class="container bg-darkBlue text-white mx-auto px-5 py-16 md:py-32" id="pest">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Pest Management Solutions</div>
@@ -227,7 +227,7 @@
   <section>
     <div class="relative overflow-hidden">
       <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row md:pt-28 pb-20 md:pb-28">
+        <div class="flex flex-col md:flex-row md:pt-28 pb-20 md:pb-28" id="security">
           <div class="md:w-1/2 px-5 md:px-20 my-10 md:my-0">
             <img
                 src="@/assets/images/backgorund/security.png"
@@ -260,7 +260,7 @@
    <img src="@/assets/images/backgorund/man-touching-business.png" class="w-full object-cover h-full assets" />
   </section>
   <section class="bg-black overflow-hidden">
-    <div class="container text-white mx-auto px-5 py-10">
+    <div class="container text-white mx-auto px-5 py-10" id="specialservices">
       <div class="flex text-center md:text-left md:flex-row mt-20">
         <div class="flex flex-col items-left md:w-1/">
           <div class="text-2xl md:text-5xl font-medium">Specialised Services Solutions</div>
@@ -291,7 +291,7 @@
     </div>
   </section>
   <section>
-    <div class="container mx-auto md:px-32 py-20">
+    <div class="container mx-auto md:px-32 py-32" id="clients">
       <div class="flex flex-col items-center md:w-1/">
         <div class="text-2xl text-center md:text-5xl font-medium">What Our Clients Say</div>
         <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>

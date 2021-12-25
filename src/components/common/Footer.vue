@@ -115,31 +115,31 @@ export default {
       footerCol2: [
         {
           title: "Service Offerings",
-          url: '/services'
+          url: '/services/#service'
         },
         {
           title: "Technical Solutions",
-          url: '/services'
+          url: '/services/#techsolution'
         },
         {
           title: "Soft Service Solutions",
-          url: '/services'
+          url: '/services/#softsolution'
         },
         {
           title: "Pest Management Solutions",
-          url: '/services'
+          url: '/services/#pest'
         },
         {
           title: "Security Solutions",
-          url: '/services'
+          url: '/services/#security'
         },
         {
           title: "Specialised Services Solutions",
-          url: '/services'
+          url: '/services/#specialservices'
         },
         {
           title: "Our Clients Say",
-          url: '/services'
+          url: '/services/#clients'
         }
       ],
       footerCol3: [
