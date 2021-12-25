@@ -48,8 +48,12 @@ import Tnc from "@/components/pages/Tnc.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior() {
-    window.scrollTo(0,0);
+  scrollBehavior (to) {
+    if (to.hash) {
+      return document.querySelector(to.hash).scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo(0,0);
+    }
   }
 });
 

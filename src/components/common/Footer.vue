@@ -85,31 +85,31 @@ export default {
       footerCol1: [
         {
           title: "Your Facility Expert",
-          url: '/about'
+          url: '/about/#facility'
         },
         {
           title: "Our Edge",
-          url: '/about'
+          url: '/about/#edge'
         },
         {
           title: "Mission",
-          url: '/about'
+          url: '/about/#mission'
         },
         {
           title: "Vision",
-          url: '/about'
+          url: '/about/#vision'
         },
         {
           title: "Our Values",
-          url: '/about'
+          url: '/about/#value'
         },
         {
           title: "Our Leadership Team",
-          url: '/about'
+          url: '/about/#leadership'
         },
         {
           title: "Our Accreditations",
-          url: '/about'
+          url: '/about/#accreditations'
         }
       ],
       footerCol2: [

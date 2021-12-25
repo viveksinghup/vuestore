@@ -36,9 +36,9 @@
     </div>
   </section>
 
-  <section class="bg-brandBlue">
-    <div class="container bg-brandBlue text-white mx-auto px-5 py-16">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+  <section class="bg-brandBlue overflow-hidden">
+    <div class="container bg-brandBlue text-white mx-auto px-5 pb-10 md:pb-32">
+      <div class="flex flex-col text-center md:text-left md:flex-row pt-10 md:pt-32" id="facility">
         <div class="flex flex-col items-left md:w-1/2 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">
             Maven: Your <br/> Facility Expert
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div class="flex text-center md:text-left md:flex-row mt-20">
+      <div class="flex text-center md:text-left md:flex-row pt-10 md:pt-32" id="edge">
         <div class="flex flex-col items-left md:w-1/">
           <div class="text-2xl md:text-5xl font-medium">Our Edge</div>
         </div>
@@ -159,8 +159,8 @@
     <img src="@/assets/images/businessman.png" class="w-full object-cover h-full assets" />
   </section>
 
-  <section class="bg-gray bg-opacity-50">
-    <div class="container mx-auto px-5 py-10 md:py-20">
+  <section class="bg-gray bg-opacity-50 overflow-hidden">
+    <div class="container mx-auto px-5 pt-10 md:pt-32" id="mission">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Mission</div>
@@ -188,7 +188,7 @@
   </section>
 
   <section class="bg-gray bg-opacity-50">
-    <div class="container mx-auto px-5 py-10 md:py-20">
+    <div class="container mx-auto px-5 py-10 md:py-32" id="vision">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Vision</div>
@@ -215,7 +215,7 @@
     </div>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-white" id="value">
     <div class="container mx-auto px-5 py-10 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
@@ -256,7 +256,7 @@
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
 
-  <section class="bg-white overflow-hidden">
+  <section class="bg-white overflow-hidden" id="leadership">
     <div class="container mx-auto md:px-16 py-10 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
@@ -359,7 +359,7 @@
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
 
-  <section class="bg-white">
+  <section class="bg-white" id="accreditations">
     <div class="container mx-auto md:px-16 py-10 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
