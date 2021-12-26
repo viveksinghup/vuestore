@@ -88,7 +88,7 @@
             md:grid-cols-2
             xl:grid-cols-3
             gap-4
-            mt-24
+            mt-24 allcard
           "
         >
           <div
@@ -97,7 +97,7 @@
             class="flex card flex-col group bg-gray pl-14 pr-8 py-5"
           >
             <div class="flex-1">
-              <div class="flex items-center">
+              <div class="flex items-center ctitle">
                 <h2 class="flex flex-col font-bold p-2 text-2xl mr-4">
                   0{{ index + 1 }}
                 </h2>
@@ -440,6 +440,12 @@ export default {
 }
 .bussiness-img{
   max-height: 900px;
+}
+.allcard .card:first-child .ctitle{
+  padding-right: 110px;
+}
+.allcard .card:nth-child(4) .ctitle{
+  padding-right: 110px;
 }
 @media screen and (max-width: 800px) {
   .form-heading {
