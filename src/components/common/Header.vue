@@ -14,8 +14,16 @@
           <div class="flex justify-between items-center">
             <div class="text-2xl font-bold bg-gray-800 md:text-3xl w-40">
               <router-link to="/">
-                <img v-if="currentRouteName == 'About'" src="@/assets/white_logo.png" class="w-full assets"/>
-                <img v-else src="@/assets/images/MAVEN.png" class="w-full assets"/>
+                <img
+                  v-if="currentRouteName == 'About'"
+                  src="@/assets/white_logo.png"
+                  class="w-full assets"
+                />
+                <img
+                  v-else
+                  src="@/assets/images/MAVEN.png"
+                  class="w-full assets"
+                />
               </router-link>
             </div>
             <div class="md:hidden">
@@ -43,33 +51,159 @@
             </div>
           </div>
           <div
-            class="flex flex-col md:flex-row md:space-x-12 md:block mob-link"
+            class="flex flex-col md:flex-row md:space-x-12 mob-link"
             :class="{ active: isHamburgerOpen }"
           >
-            <router-link
-              class="link font-semibold py-4 md:border-none md:py-0 relative"
-              @click="closeHamburgerMenu()"
-              to="/"
-              >Home</router-link
-            >
-            <router-link
-              class="link font-semibold py-4 md:border-none md:py-0 relative"
-              to="/about"
-              @click="closeHamburgerMenu()"
-              >About</router-link
-            >
-            <router-link
-              class="link font-semibold py-4 md:border-none md:py-0 relative"
-              to="/services"
-              @click="closeHamburgerMenu()"
-              >Services</router-link
-            >
-            <router-link
-              class="link font-semibold py-4 border-none md:py-0 relative"
-              to="/contact-us"
-              @click="closeHamburgerMenu()"
-              >Contact Us</router-link
-            >
+            <div class="relative mob-list">
+              <router-link
+                class="link font-semibold py-4 md:border-none md:py-0 relative"
+                @click="closeHamburgerMenu()"
+                to="/"
+                >Home</router-link
+              >
+            </div>
+            <div class="relative mob-list">
+              <router-link
+                class="link font-semibold py-4 md:border-none md:py-0 relative"
+                to="/about"
+                @click="closeHamburgerMenu()"
+                >About</router-link
+              >
+              <ul
+                class="
+                  md:absolute
+                  left-0
+                  top-0
+                  md:bg-white
+                  md:border-t-2 border-brandBlue
+                  md:w-48
+                "
+              >
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/about/#facility"
+                    @click="closeHamburgerMenu()"
+                    >Profile</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/about/#edge"
+                    @click="closeHamburgerMenu()"
+                    >Our Edge</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/about/#mission"
+                    @click="closeHamburgerMenu()"
+                    >Mission</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/about/#vision"
+                    @click="closeHamburgerMenu()"
+                    >Vision</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/about/#value"
+                    @click="closeHamburgerMenu()"
+                    >Our Values</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/about/#accreditations"
+                    @click="closeHamburgerMenu()"
+                    >Our Accreditations</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="relative mob-list">
+              <router-link
+                class="link font-semibold py-4 md:border-none md:py-0 relative"
+                to="/services"
+                @click="closeHamburgerMenu()"
+                >Services</router-link
+              >
+              <ul
+                class="
+                  md:absolute
+                  left-0
+                  top-0
+                  md:bg-white
+                  md:border-t-2 border-brandBlue
+                  md:w-52
+                "
+              >
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/services/#techsolution"
+                    @click="closeHamburgerMenu()"
+                    >Technical Solutions</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/services/#softsolution"
+                    @click="closeHamburgerMenu()"
+                    >Soft Service Solutions</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/services/#pest"
+                    @click="closeHamburgerMenu()"
+                    >Pest Management Solutions</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/services/#security"
+                    @click="closeHamburgerMenu()"
+                    >Security Solutions</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/services/#specialservices"
+                    @click="closeHamburgerMenu()"
+                    >Specialised Services Solutions</router-link
+                  >
+                </li>
+                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                  <router-link
+                    class="text-black inline-block text-sm"
+                    to="/services/#clients"
+                    @click="closeHamburgerMenu()"
+                    >Client testimonials</router-link
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="relative mob-list">
+              <router-link
+                class="link font-semibold py-4 border-none md:py-0 relative"
+                to="/contact-us"
+                @click="closeHamburgerMenu()"
+                >Contact Us</router-link
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +232,7 @@ export default {
       return this.currentRouteName == "About"
         ? "bg-black text-white"
         : "text-black header-color";
-    }
+    },
   },
   methods: {
     onScroll() {
@@ -113,9 +247,9 @@ export default {
       }
       this.lastScrollPosition = currentScrollPosition;
     },
-    closeHamburgerMenu(){
-     return this.isHamburgerOpen = false;
-    }
+    closeHamburgerMenu() {
+      return (this.isHamburgerOpen = false);
+    },
   },
   mounted() {
     if (process.browser) {
@@ -167,15 +301,36 @@ export default {
 .header--hidden {
   transform: translateY(-100%);
 }
+.mob-list ul {
+  display: none;
+  margin-top: 50px;
+}
+.mob-list ul:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+}
+.mob-list:hover ul {
+  display: block;
+}
 @media screen and (max-width: 800px) {
   .mob-link {
     display: none;
-    padding-top: 5rem;
-    padding-left: 2rem;
+    padding-top: 1.5rem;
   }
   .mob-link.active {
     display: flex;
     min-height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .mob-list ul {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 </style>
