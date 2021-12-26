@@ -46,7 +46,7 @@
             md:w-1/2 flex-shrink-0
             text-lg
             md:text-2xl mt-10 px-5 md:px-0
-            md:mt-20
+            md:mt-16
           " >
         <p>
         Bringing you the finest facility management solutions for a better and healthier working environment with our expertise and experience.
@@ -145,7 +145,7 @@
           </div>
           <div class="flex flex-col px-5 py-5">
             <div class="flex-1">
-              <div class="w-80 h-full">
+              <div class="w-80 h-full md:ml-10">
                 <img
                   src="@/assets/images/backgorund/soft-solution.png"
                   class="max-w-full assets"
@@ -279,7 +279,7 @@
               <div class="flex-1">
                 <div class="flex items-center">
                   <h3 class="flex flex-col font-bold text-yellow text-xl mr-4">
-                    0{{index}}
+                    0{{index+1}}
                   </h3>
                   <h3 class="font-bold text-xl">{{data.title}}</h3>
                 </div>

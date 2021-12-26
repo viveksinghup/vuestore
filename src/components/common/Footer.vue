@@ -1,5 +1,13 @@
 <template>
-  <div class="bg-gray-100 px-27 py-10 md:py-20 border-t border-gray10 border-opacity-50">
+  <div
+    class="
+      bg-gray-100
+      px-27
+      py-10
+      md:py-20
+      border-t border-gray10 border-opacity-50
+    "
+  >
     <div
       class="
         max-w-6xl
@@ -59,7 +67,10 @@
             Plot No 84 & 85, VK Towers, 2nd Floor, Kavuri Hills Ext., Near IDFC
             Bank, Guttala Begumpet, Madhapur, Hyderabad 500081 Ph : +91
             9100114610</a
-          ><a class="my-3 block" href="/#">contact@company.com</a>
+          >
+          <div class="flex">
+            <a href="https://www.linkedin.com/company/maven-fms/?viewAsMember=true" target="_blank"><img src="@/assets/images/linkedin.svg" class="" /></a>
+          </div>
         </div>
       </div>
     </div>
@@ -68,8 +79,9 @@
     <div class="grid grid-cols-3 text-xs md:text-sm gap-4 max-w-6xl m-auto">
       <h4 class="text-left">©2021 Maven Facility Management Pvt. Ltd.</h4>
       <!-- <h4 class="text-center">Disclaimer</h4> -->
-      <div class="text-center"><router-link to="/tnc"
-        >Disclaimer</router-link></div>
+      <div class="text-center">
+        <router-link to="/tnc">Disclaimer</router-link>
+      </div>
       <h4 class="text-right">
         Website by- <span class="text-bold">SocialCulture</span>
       </h4>
@@ -84,74 +96,70 @@ export default {
     return {
       footerCol1: [
         {
-          title: "Your Facility Expert",
-          url: '/about/#facility'
+          title: "Profile",
+          url: "/about/#facility",
         },
         {
           title: "Our Edge",
-          url: '/about/#edge'
+          url: "/about/#edge",
         },
         {
           title: "Mission",
-          url: '/about/#mission'
+          url: "/about/#mission",
         },
         {
           title: "Vision",
-          url: '/about/#vision'
+          url: "/about/#vision",
         },
         {
           title: "Our Values",
-          url: '/about/#value'
+          url: "/about/#value",
         },
-        {
-          title: "Our Leadership Team",
-          url: '/about/#leadership'
-        },
+        // {
+        //   title: "Our Leadership Team",
+        //   url: "/about/#leadership",
+        // },
         {
           title: "Our Accreditations",
-          url: '/about/#accreditations'
-        }
+          url: "/about/#accreditations",
+        },
       ],
       footerCol2: [
         {
-          title: "Service Offerings",
-          url: '/services/#service'
-        },
-        {
           title: "Technical Solutions",
-          url: '/services/#techsolution'
+          url: "/services/#techsolution",
         },
         {
           title: "Soft Service Solutions",
-          url: '/services/#softsolution'
+          url: "/services/#softsolution",
         },
         {
           title: "Pest Management Solutions",
-          url: '/services/#pest'
+          url: "/services/#pest",
         },
         {
           title: "Security Solutions",
-          url: '/services/#security'
+          url: "/services/#security",
         },
         {
           title: "Specialised Services Solutions",
-          url: '/services/#specialservices'
+          url: "/services/#specialservices",
         },
         {
-          title: "Our Clients Say",
-          url: '/services/#clients'
-        }
+          title: "Client testimonials",
+          url: "/services/#clients",
+        },
       ],
       footerCol3: [
         {
           title: "FAQ`s",
-          url: '/faq'
+          url: "/faq",
         },
         {
           title: "Terms and Conditions",
-          url: '/tnc'
-        }
-        ],
+          url: "/tnc",
+        },
+      ],
     };
   },
 };

@@ -85,7 +85,7 @@
           <div class="text-2xl md:text-5xl font-medium">Our Edge</div>
         </div>
       </div>
-      <div class="border-t mt-10 border-white">
+      <div class="border-t-2 mt-10 border-white">
         <div
           class="
             grid grid-cols-1
@@ -256,7 +256,7 @@
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
   </section>
 
-  <section class="bg-white overflow-hidden" id="leadership">
+  <!-- <section class="bg-white overflow-hidden" id="leadership">
     <div class="container mx-auto md:px-16 py-10 md:py-32">
       <div class="flex flex-col text-center md:text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
@@ -357,7 +357,7 @@
       </div>
     </div>
     <div class="border-b border-gray10 w-5/6 mx-auto opacity-50"></div>
-  </section>
+  </section> -->
 
   <section class="bg-white" id="accreditations">
     <div class="container mx-auto md:px-16 py-10 md:py-32">
@@ -377,7 +377,7 @@
             </div>
             <div class="px-20 text-center">
               <div class="items-center">
-                <h2 class="mt-4 text-lg">ISO 9001: 2015</h2>
+                <h2 class="mt-4 font-bold text-lg">ISO 9001: 2015</h2>
               </div>
               <p class="text-gray-500 text-sm mt-2">
                 Quality Management System
@@ -394,7 +394,7 @@
             </div>
             <div class="px-20 text-center">
               <div class="items-center">
-                <h2 class="mt-4 text-lg">ISO 9001: 2015</h2>
+                <h2 class="mt-4 font-bold text-lg">ISO 9001: 2015</h2>
               </div>
               <p class="text-gray-500 text-sm mt-2">
                 Quality Management System
@@ -411,7 +411,7 @@
             </div>
             <div class="px-20 text-center">
               <div class="items-center">
-                <h2 class="mt-4 text-lg">ISO 9001: 2015</h2>
+                <h2 class="mt-4 font-bold text-lg">ISO 9001: 2015</h2>
               </div>
               <p class="text-gray-500 text-sm mt-2">
                 Quality Management System

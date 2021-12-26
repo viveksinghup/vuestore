@@ -12,9 +12,7 @@
           md:px-0
         "
       >
-        <div
-          class="flex items-center text-center lg:text-left lg:w-2/5"
-        >
+        <div class="flex items-center text-center lg:text-left lg:w-2/5">
           <div>
             <h2 class="text-4xl font-semibold md:text-7xl">
               We Will Take Care Of Your Facility
@@ -64,16 +62,25 @@
               in the FM industry with expertise in the same vertical.
             </p>
             <h2 class="text-xl font-semibold">Head Office</h2>
-            <div class="h-2 md:w-16 text-center bg-yellow mt-4 mb-4"></div>
+            <div class="h-2 md:w-16 text-center bg-yellow mt-4 mb-6"></div>
             <p>
               Plot No : 84 & 85, 2nd Floor, VK Towers, Behind IDFC First Bank,
               Kavuri Hills Extn, Madhapur, Hyderabad 500081 <br /><br />
               Phone Number: +91 9100114610
             </p>
             <br />
-            <p>Email:</p>
+            <p>
+              Email: <a href="mailto:info@mavenfms.com">info@mavenfms.com</a>
+            </p>
             <br />
-            <p>Follow Us:</p>
+            <div class="flex">
+              <p class="mr-2">Follow Us:</p>
+              <a
+                href="https://www.linkedin.com/company/maven-fms/?viewAsMember=true"
+                target="_blank"
+                ><img src="@/assets/images/linkedin-white.svg" class=""
+              /></a>
+            </div>
           </div>
           <div class="md:w-1/2 mt-10 md:mt-0">
             <EnquiryForm></EnquiryForm>

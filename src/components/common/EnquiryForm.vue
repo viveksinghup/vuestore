@@ -274,7 +274,7 @@ export default {
 </script>
 <style lang="postcss" scoped>
 .-z-1 {
-    z-index: -1;
+    z-index: 1;
   }
 
   .origin-0 {

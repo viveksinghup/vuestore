@@ -63,7 +63,7 @@
         <div class="flex flex-col text-center md:text-left md:flex-row">
           <div class="flex flex-col items-left md:w-1/2">
             <div class="text-2xl md:text-5xl font-medium">Our Services</div>
-            <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
+            <div class="h-1 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
           </div>
           <div
             class="
@@ -73,7 +73,7 @@
               text-lg
               md:text-2xl
               mt-10
-              md:mt-28
+              md:mt-16
             "
           >
             Bringing you the finest facility management solutions for a better
@@ -308,8 +308,8 @@
         "
       >
         <div class="flex flex-col items-center">
-          <div class="text-2xl md:text-4xl font-medium">Our Clients</div>
-          <div class="h-1 w-16 bg-darkBlue mt-5 mb-4"></div>
+          <div class="text-2xl md:text-5xl font-medium">Our Clients</div>
+          <div class="h-2 w-16 hidden md:flex bg-brandBlue mt-5 mb-4"></div>
         </div>
         <div class="py-10">
           <marquee
