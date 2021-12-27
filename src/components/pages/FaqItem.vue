@@ -16,7 +16,7 @@
     </div>
     <div class="answer">
       <div class="border-t border-gray10 mt-2 pt-6"></div>
-      <div>{{ faq.answer }}</div>
+      <div v-html="faq.answer"></div>
     </div>
   </div>
 </template>
