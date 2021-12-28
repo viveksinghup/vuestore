@@ -26,7 +26,7 @@
                 working environment.
               </div>
               <div class="flex justify-center lg:justify-start mt-7">
-                <a
+                <router-link
                   class="
                     px-7
                     py-2
@@ -40,8 +40,8 @@
                     flex
                     items-center
                   "
-                  href="#"
-                  >Know More</a
+                  to="/about/#facility"
+                  >Know More</router-link
                 >
               </div>
             </div>
@@ -176,7 +176,7 @@
               </div>
               <div class="flex justify-center lg:justify-start mt-10">
                 <router-link
-                  to="/link"
+                  to="/services"
                   class="
                     px-9
                     py-3.5

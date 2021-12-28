@@ -243,7 +243,7 @@
               <p class=" mt-10">
                 We have one of the best-trained security guards in the industry with keen observation skills and a wide range of security solutions and access control systems. We offer customized solutions to schools, government buildings, public centres, retail stores, commercial and residential buildings, hotels, and restaurants.
               </p>
-              <ul class="md:list-disc text-left md:pl-5 mt-10 md:mt-0">
+              <ul class="md:list-disc text-left md:pl-5 mt-10">
                 <li>24/7 Control Room Facility</li>
                 <li>Extensive Communication Network For All Staff</li>
                 <li>Regular Inspection And Patrolling At Night</li>

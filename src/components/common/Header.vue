@@ -79,49 +79,49 @@
                   md:w-48
                 "
               >
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/about/#facility"
                     @click="closeHamburgerMenu()"
                     >Profile</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/about/#edge"
                     @click="closeHamburgerMenu()"
                     >Our Edge</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/about/#mission"
                     @click="closeHamburgerMenu()"
                     >Mission</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/about/#vision"
                     @click="closeHamburgerMenu()"
                     >Vision</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/about/#value"
                     @click="closeHamburgerMenu()"
                     >Our Values</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/about/#accreditations"
                     @click="closeHamburgerMenu()"
                     >Our Accreditations</router-link
@@ -146,49 +146,49 @@
                   md:w-52
                 "
               >
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/services/#techsolution"
                     @click="closeHamburgerMenu()"
                     >Technical Solutions</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/services/#softsolution"
                     @click="closeHamburgerMenu()"
                     >Soft Service Solutions</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/services/#pest"
                     @click="closeHamburgerMenu()"
                     >Pest Management Solutions</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/services/#security"
                     @click="closeHamburgerMenu()"
                     >Security Solutions</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/services/#specialservices"
                     @click="closeHamburgerMenu()"
                     >Specialised Services Solutions</router-link
                   >
                 </li>
-                <li class="px-4 py-1 md:py-2 border-b border-gray">
+                <li class="px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
-                    class="text-black inline-block text-sm"
+                    class="text-black inline-block text-sm group-hover:text-white transition"
                     to="/services/#clients"
                     @click="closeHamburgerMenu()"
                     >Client testimonials</router-link
