@@ -311,21 +311,70 @@
         </div>
         <div class="py-10">
           <marquee
-            behavior="alternate"
-            direction="left"
+            class="GeneratedMarquee"
             onmouseover="this.stop();"
             onmouseout="this.start();"
             repeat="yes"
+            direction="left"
             scrollamount="5"
-            loop="3"
+            behavior="scroll"
+            loop="10"
           >
-            <div class="flex space-x-5 w-full">
-              <div><img src="@/assets/images/logo1.png" /></div>
-              <div><img src="@/assets/images/logo3.png" /></div>
-              <div><img src="@/assets/images/logo4.png" /></div>
-              <div><img src="@/assets/images/logo5.png" /></div>
-              <div><img src="@/assets/images/logo6.png" /></div>
-              <div><img src="@/assets/images/logo22.png" /></div>
+            <div class="flex space-x-5">
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo1.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo3.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo4.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo5.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo6.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo22.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo6.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo5.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo4.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo3.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo1.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo22.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo1.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo3.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo4.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo5.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo6.png" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo22.png" />
+              </div>
             </div>
           </marquee>
         </div>
