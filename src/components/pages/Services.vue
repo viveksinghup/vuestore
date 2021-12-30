@@ -11,7 +11,7 @@
           md:px-0"
       >
         <div
-          class="flex items-center text-center lg:text-left lg:w-2/5"
+          class="flex items-center px-2 md:px-0 text-left lg:w-2/5"
         >
           <div>
             <h2 class="text-4xl font-semibold md:text-7xl">
@@ -19,7 +19,7 @@
             </h2>
             <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
             <p>
-              Maven is one of India's leading companies in the Integrated Facility Management Services (IFMS) segment. providing customised solutions for clients.
+              Maven is one of the leading Facility Management companies in India. Providing 100% tailored solutions for organisations across the country.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@
   </section>
   <section>
     <div class="container mx-auto px-5 py-10 md:py-32" id="service">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Service Offerings</div>
           <div class="h-0.5 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
@@ -45,7 +45,7 @@
           class="
             md:w-1/2 flex-shrink-0
             text-lg
-            md:text-2xl mt-10 px-5 md:px-0
+            md:text-2xl mt-10 px-0
             md:mt-16
           " >
         <p>
@@ -60,12 +60,12 @@
   </section>
   <section class="bg-brandBlue">
     <div class="container bg-brandBlue text-white mx-auto py-20 md:py-32" id="techsolution">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2 px-5 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">Technical Solutions</div>
           <div class="h-0.5 hidden md:flex bg-white mt-6 mb-4"></div>
           <p class="mt-7">
-          We offer a whole range of Electromechanical, Maintenance and Repair solutions. Our engineers and technicians are well equipped with skills and tools to ensure that your needs are met. We use the latest technology and prevention methodology to help you secure and maintain your assets for a longer duration and mitigate the risk of failure. 
+          We offer a whole range of Electromechanical, Maintenance and Repair solutions. Our engineers and technicians are well equipped with skills and tools to ensure that your needs are met. We use the latest technology and prevention methodology to help you secure and maintain your assets for a longer duration and mitigate the risk of failure.
           </p>
           <p class="mt-3">
           We provide regular comprehensive system checkups, performance evaluation and tech updates to optimise and ensure there is no productivity loss.
@@ -76,7 +76,7 @@
         </div>
         <div
           class="
-            px-10 md:px-20
+            px-6 md:px-20
             md:w-1/2
             flex-shrink-0
             mt-20
@@ -112,7 +112,7 @@
   </section>
   <section>
     <div class="container mx-auto px-5 py-10 md:py-24" id="softsolution">
-      <div class="flex text-center md:text-left md:flex-row mt-12">
+      <div class="flex text-left md:flex-row mt-12">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl pb-10">Soft Service <br/> Solutions</div>
         </div>
@@ -185,7 +185,7 @@
   </section>
   <section class="bg-darkBlue">
     <div class="container bg-darkBlue text-white mx-auto px-5 py-16 md:py-32" id="pest">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Pest Management Solutions</div>
           <div class="h-0.5 hidden md:flex w-full bg-white mt-6 mb-4"></div>
@@ -235,7 +235,7 @@
               />
           </div>
           <div
-            class="flex text-center lg:text-left lg:w-1/2 md:pr-20"
+            class="flex px-2 md:px-0 text-left lg:w-1/2 md:pr-20"
           >
             <div>
               <div class="text-2xl md:text-5xl font-medium">Security Solutions</div>
@@ -261,7 +261,7 @@
   </section>
   <section class="bg-black overflow-hidden">
     <div class="container text-white mx-auto px-5 py-10" id="specialservices">
-      <div class="flex text-center md:text-left md:flex-row mt-20">
+      <div class="flex text-left md:flex-row mt-20">
         <div class="flex flex-col items-left md:w-1/">
           <div class="text-2xl md:text-5xl font-medium">Specialised Services Solutions</div>
         </div>
@@ -292,8 +292,8 @@
   </section>
   <section>
     <div class="container mx-auto md:px-32 py-32" id="clients">
-      <div class="flex flex-col items-center md:w-1/">
-        <div class="text-2xl text-center md:text-5xl font-medium">What Our Clients Say</div>
+      <div class="flex flex-col items-center">
+        <div class="text-2xl md:text-5xl font-medium px-6">What Our Clients Say</div>
         <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
       </div>
       <div class="flex md:my-10 px-5 md:px-0 flex-col md:flex-row">

@@ -59,15 +59,14 @@
     </section>
 
     <section class="py-10">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="container mx-auto px-6 md:px-4">
+        <div class="flex flex-col text-left md:flex-row">
           <div class="flex flex-col items-left md:w-1/2">
             <div class="text-2xl md:text-5xl font-medium">Our Services</div>
             <div class="h-1 hidden md:flex w-96 bg-black mt-6 mb-4"></div>
           </div>
           <div
             class="
-              px-10
               md:px-20 md:w-2/3
               flex-shrink-0
               text-lg
@@ -88,13 +87,13 @@
             md:grid-cols-2
             xl:grid-cols-3
             gap-4
-            mt-24 allcard
+            mt-16 md:mt-24 allcard
           "
         >
           <div
             v-for="(data, index) in services"
             :key="index"
-            class="flex card flex-col group bg-gray pl-14 pr-8 py-5"
+            class="flex card flex-col group bg-gray pl-8 md:pl-14 pr-8 py-5"
           >
             <div class="flex-1">
               <div class="flex items-center ctitle">
@@ -134,17 +133,16 @@
           <div class="md:w-1/2">
             <div
               class="
-                text-2xl text-center
-                md:text-left md:text-5xl md:pr-32
+                text-2xl text-left md:text-5xl md:pr-32
                 form-heading
-                mb-10
+                mb-5 md:mb-10
                 md:mb-0
               "
             >
               Get a free consultation from top industry professionals and manage
               your facility with ease and perfection.
             </div>
-            <div class="h-2 w-16 hidden md:flex bg-brandBlue mt-5 mb-4"></div>
+            <div class="h-2 w-16 md:flex bg-brandBlue mt-5 mb-10 md:mb-4"></div>
           </div>
           <div class="md:w-1/2">
             <EnquiryForm></EnquiryForm>
@@ -153,7 +151,7 @@
       </div>
     </div>
 
-    <section class="relative overflow-hidden py-64">
+    <section class="relative overflow-hidden py-32 md:py-64">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row">
           <div class="lg:lg:w-2/5 px-10 md:pr-0 md:pl-0 mb-10 md:mb-0">
@@ -163,7 +161,7 @@
             />
           </div>
           <div
-            class="flex items-center text-center lg:text-left lg:w-3/5 md:pl-20"
+            class="flex items-center pl-2 text-left lg:w-3/5 md:pl-20"
           >
             <div>
               <div class="text-xl md:text-3xl">
@@ -174,7 +172,7 @@
                 the right ambiance for employees, visitors, and potential
                 clients.
               </div>
-              <div class="flex justify-center lg:justify-start mt-10">
+              <div class="flex mt-10">
                 <router-link
                   to="/services"
                   class="
@@ -339,7 +337,7 @@
       <div class="container mx-auto px-4">
         <div class="flex py-20 flex-col-reverse md:flex-row">
           <div
-            class="flex items-center text-center lg:text-left lg:w-2/5 md:pr-20"
+            class="flex items-center text-left lg:w-2/5 md:pr-20"
           >
             <div>
               <h2 class="text-xl md:text-6xl">

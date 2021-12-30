@@ -38,10 +38,10 @@
 
   <section class="bg-brandBlue overflow-hidden">
     <div class="container bg-brandBlue text-white mx-auto px-5 pb-10 md:pb-32">
-      <div class="flex flex-col text-center md:text-left md:flex-row pt-10 md:pt-32" id="facility">
+      <div class="flex flex-col text-left md:flex-row pt-10 md:pt-32" id="facility">
         <div class="flex flex-col items-left md:w-1/2 flex-shrink-0">
           <div class="text-2xl md:text-5xl font-medium">
-            Maven: Your <br/> Facility Expert
+            Maven: Your <br class="hidden md:flex"> Facility Expert
           </div>
           <div class="h-0.5 hidden md:flex w-96 bg-white mt-6 mb-4"></div>
           <p class="mt-7">
@@ -95,7 +95,7 @@
             mt-6
           "
         >
-          <div class="flex w-full flex-col px-10 lg:pl-0 pt-5">
+          <div class="flex w-full flex-col md:px-10 lg:pl-0 pt-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h2 class="mt-4 text-2xl">Always Equipped</h2>
@@ -106,7 +106,7 @@
               </p>
             </div>
           </div>
-          <div class="flex w-full flex-col px-10 pt-5">
+          <div class="flex w-full flex-col md:px-10 pt-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h2 class="mt-4 text-2xl">Fully Compliant</h2>
@@ -117,7 +117,7 @@
               </p>
             </div>
           </div>
-          <div class="flex w-full flex-col px-10 pt-5">
+          <div class="flex w-full flex-col md:px-10 pt-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h2 class="mt-4 text-2xl">Trained Workforce</h2>
@@ -128,7 +128,7 @@
               </p>
             </div>
           </div>
-          <div class="flex w-full flex-col px-10 lg:pl-0 pt-5">
+          <div class="flex w-full flex-col md:px-10 lg:pl-0 pt-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h2 class="mt-4 text-2xl">Sustainable Approach</h2>
@@ -139,7 +139,7 @@
               </p>
             </div>
           </div>
-          <div class="flex w-full flex-col px-10 pt-5">
+          <div class="flex w-full flex-col md:px-10 pt-5">
             <div class="flex-1">
               <div class="flex items-center">
                 <h2 class="mt-4 text-2xl">Customized Solutions</h2>
@@ -161,14 +161,13 @@
 
   <section class="bg-gray bg-opacity-50 overflow-hidden">
     <div class="container mx-auto px-5 pt-10 md:pt-32" id="mission">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Mission</div>
           <div class="h-0.5 hidden md:flex md:w-96 bg-black mt-10 mb-4"></div>
         </div>
         <div
           class="
-            px-5
             md:px-20 md:w-2/3
             flex-shrink-0
             text-lg
@@ -189,14 +188,13 @@
 
   <section class="bg-gray bg-opacity-50">
     <div class="container mx-auto px-5 py-10 md:py-32" id="vision">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Vision</div>
           <div class="h-0.5 hidden md:flex w-96 bg-black mt-10 mb-4"></div>
         </div>
         <div
           class="
-            px-10
             md:px-20 md:w-2/3
             flex-shrink-0
             text-lg
@@ -217,13 +215,13 @@
 
   <section class="bg-white" id="value">
     <div class="container mx-auto px-5 py-10 md:py-32">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Values</div>
           <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
         </div>
       </div>
-      <div class="px-16">
+      <div class="md:px-16">
         <div
           class="
             grid grid-cols-1
@@ -360,8 +358,8 @@
   </section> -->
 
   <section class="bg-white" id="accreditations">
-    <div class="container mx-auto md:px-16 py-10 md:py-32">
-      <div class="flex flex-col text-center md:text-left md:flex-row">
+    <div class="container mx-auto px-6 md:px-16 py-10 md:py-32">
+      <div class="flex flex-col text-left md:flex-row">
         <div class="flex flex-col items-left md:w-1/2">
           <div class="text-2xl md:text-5xl font-medium">Our Accreditations</div>
           <div class="h-2 md:w-16 bg-brandBlue mt-5 mb-4"></div>
