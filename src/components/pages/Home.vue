@@ -117,7 +117,7 @@
                 {{ data.description }}
               </p>
             </div>
-            <router-link to="/link" class="inline-block transition"
+            <router-link :to="data.url" class="inline-block transition"
               ><img
                 src="@/assets/images/arrow-blue.svg"
                 class="w-10 card-arrow my-6"
@@ -436,31 +436,31 @@ export default {
           title: "TECHNICAL SOLUTIONS",
           description:
             "We offer a whole range of Electromechanical, Maintenance and Repair solutions. Our competently trained staff provides regular and meticulous system check-ups, with performance evaluation and tech updates to optimise and ensure there is no productivity loss.",
-          link: "www.google.com",
+          url: "/services/#techsolution",
         },
         {
           title: "SOFT SERVICE SOLUTIONS",
           description:
             "We employ a combination of Mechanised + Manpower led housekeeping strategies to beautify your facility. Our solution architects curate customized and cost-effective housekeeping and maintenance strategies to help you keep your vicinity hygienic, clean and green.",
-          link: "www.google.com",
+          url: "/services/#softsolution",
         },
         {
           title: "PEST MANAGEMENT SOLUTIONS",
           description:
             "Our pest management solutions are aimed at eliminating the population of insects that are considered detrimental to humans, your facility and the environment by using green methods to ensure quality, health and safety regulations.",
-          link: "www.google.com",
+          url: "/services/#pest",
         },
         {
           title: "SECURITY SOLUTIONS",
           description:
             "We have one of the best-trained security personnel in the industry with keen observation skills and a wide range of security solutions and access control systems. We offer fully-customized security services to schools, government buildings, public centres, retail stores, commercial and residential buildings, hotels, etc.",
-          link: "www.google.com",
+          url: "/services/#security",
         },
         {
           title: "SPECIALISED SERVICES SOLUTIONS",
           description:
             "Our extensive specialized solutions are exclusively designed to meet your short-term facility needs. We offer one-time Project and Façade cleaning services, and Vendor management, Help-desk management, Staffing and Payroll solutions.",
-          link: "www.google.com",
+          url: "/services/#specialservices",
         },
       ],
     };

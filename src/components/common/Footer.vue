@@ -145,10 +145,10 @@ export default {
           title: "Specialised Services Solutions",
           url: "/services/#specialservices",
         },
-        {
-          title: "Client testimonials",
-          url: "/services/#clients",
-        },
+        // {
+        //   title: "Client testimonials",
+        //   url: "/services/#clients",
+        // },
       ],
       footerCol3: [
         {
