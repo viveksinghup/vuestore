@@ -290,7 +290,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <!-- <section>
     <div class="container mx-auto md:px-32 py-32" id="clients">
       <div class="flex flex-col items-center">
         <div class="text-2xl md:text-5xl font-medium px-6">What Our Clients Say</div>
@@ -335,7 +335,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 </template>
