@@ -186,14 +186,14 @@
                     >Specialised Services Solutions</router-link
                   >
                 </li>
-                <li class=" text-black px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
+                <!-- <li class=" text-black px-4 py-1 md:py-2 border-b border-gray group hover:bg-brandBlue transition">
                   <router-link
                     class="inline-block text-sm group-hover:text-white transition"
                     to="/services/#clients"
                     @click="closeHamburgerMenu()"
                     >Client testimonials</router-link
                   >
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="relative mob-list">
