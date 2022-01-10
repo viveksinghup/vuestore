@@ -1,5 +1,5 @@
 <template>
-  <div class="eform">
+  <div class="eform" :class="success==true?'reveal':''">
     <div
       class="
         mx-auto
@@ -133,41 +133,6 @@
             >Interest is required</span
           >
         </div>
-<<<<<<< HEAD
-      </fieldset>
-      <button
-        id="button"
-        type="button"
-        @click="submitForm()"
-        :class="submitClicked==true? 'inactive':''"
-        class="
-          w-full
-          px-6
-          py-4
-          mt-5
-          text-lg text-white
-          transition-all
-          duration-150
-          ease-linear
-          shadow-md
-          outline-none bg-brandBlue hover:bg-darkBlue
-          hover:shadow-lg
-          focus:outline-none
-          btn
-        ">
-        Submit
-      </button>
-      <p v-if="alert !== ''" class="text-green-500 mt-5">
-        {{alert}}
-      </p>
-      <p v-if="error">
-        <b>Please correct the following error(s):</b>
-        <ul>
-          <li>{{ error }}</li>
-        </ul>
-      </p>
-    </form>
-=======
         <div class="relative z-0 w-full mb-8">
           <textarea
             type="email"
@@ -221,6 +186,7 @@
           id="button"
           type="button"
           @click="submitForm()"
+          :class="submitClicked==true? 'inactive':''"
           class="
             w-full
             px-6
@@ -248,15 +214,15 @@
           </ul>
         </p>
       </form>
-      <div class="eform-submit mx-auto border-0 min-h-full
+      <div class="eform-submit reveal mx-auto border-0 min-h-full
         shadow-lg absolute left-0 top-0 w-full
         sm:rounded-3xl justify-center
-        max-w-md bg-brandBlue text-white p-8 flex flex-col h-full ">
+        max-w-md bg-brandBlue text-white p-8 flex flex-col h-full "
+        >
       <div class="text-2xl md:text-6xl font-bold mb-2">Thank You</div>
       <div class="text-sm md:text-xl">We'll be getting you shortly..</div>
     </div>
     </div>
->>>>>>> 376b1e8443f381d3b2af66e4429038ab95104b89
   </div>
 </template>
 <script>
@@ -266,24 +232,17 @@ export default {
   name: "Home",
   data() {
     return {
-<<<<<<< HEAD
       data:{},
       alert:'',
       error:'',
+      success:false,
       submitClicked:false,
       };
-=======
-      data: {},
-      alert: "",
-      error: "",
-    };
->>>>>>> 376b1e8443f381d3b2af66e4429038ab95104b89
   },
   methods: {
     submitForm() {
       console.log(this.data);
       this.error = this.validateFormData(this.data);
-<<<<<<< HEAD
       if(this.error == '' && this.submitClicked == false){
       this.submitClicked = true
           axios
@@ -292,26 +251,12 @@ export default {
             console.log(response)
             this.$toast(response.message ?? 'Successfully submitted',{ type:'success'});
             this.setData()
+            this.success = true
           })
           .catch(error => {
             console.log(error)
             this.$toast(error,{type: 'error'});
-=======
-      if (this.error == "") {
-        axios
-          .post("http://vikash.programsmagic.com/api/email", this.data)
-          .then((response) => {
-            console.log(response);
-            this.$toast(response.message ?? "Successfully submitted", {
-              type: "success",
-            });
-            this.setData();
->>>>>>> 376b1e8443f381d3b2af66e4429038ab95104b89
           })
-          .catch((error) => {
-            console.log(error);
-            this.$toast(error, { type: "error" });
-          });
       } else {
         this.$toast(this.error, { type: "error" });
       }
@@ -375,26 +320,6 @@ select:not([value=""]):valid ~ label {
   --tw-translate-y: -1.5rem;
 }
 
-<<<<<<< HEAD
-  input:focus ~ label,
-  select:focus ~ label {
-    /* @apply text-black; left-0; */
-    --tw-text-opacity: 1;
-    color: rgba(0, 0, 0, var(--tw-text-opacity));
-    left: 0px;
-  }
-
-  .btn.inactive{
-    @apply bg-opacity-70;
-    pointer-events: non;
-  }
-  
-  .eform.reveal .eform-submit{
-    opacity: 1;
-    pointer-events: all;
-    transition: 0.45s opacity;
-  }
-=======
 input:focus ~ label,
 select:focus ~ label {
   /* @apply text-black; left-0; */
@@ -415,5 +340,4 @@ select:focus ~ label {
   @apply bg-opacity-70;
   pointer-events: none;
 }
->>>>>>> 376b1e8443f381d3b2af66e4429038ab95104b89
 </style>
