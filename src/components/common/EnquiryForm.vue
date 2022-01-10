@@ -180,11 +180,11 @@
             I agree to receive updates on the latest trends, best practices and services offered by Maven.
         </div>
       </fieldset>
-
       <button
         id="button"
         type="button"
         @click="submitForm()"
+        :class="submitClicked==true? 'inactive':''"
         class="
           w-full
           px-6
@@ -198,6 +198,7 @@
           outline-none bg-brandBlue hover:bg-darkBlue
           hover:shadow-lg
           focus:outline-none
+          btn
         ">
         Submit
       </button>
@@ -223,13 +224,15 @@ export default {
       data:{},
       alert:'',
       error:'',
-    };
+      submitClicked:false,
+      };
   },
   methods: {
     submitForm(){
       console.log(this.data)
       this.error = this.validateFormData(this.data);
-      if(this.error == ''){
+      if(this.error == '' && this.submitClicked == false){
+      this.submitClicked = true
           axios
           .post('http://vikash.programsmagic.com/api/email', this.data)
           .then(response => {
@@ -246,6 +249,9 @@ export default {
       }
        this.alert =''
        this.error =''
+       setTimeout(function(){
+            this.submitClicked = false
+      },3000);
     },
     setData(){
       this.data = {
@@ -306,5 +312,16 @@ export default {
     --tw-text-opacity: 1;
     color: rgba(0, 0, 0, var(--tw-text-opacity));
     left: 0px;
+  }
+
+  .btn.inactive{
+    @apply bg-opacity-70;
+    pointer-events: non;
+  }
+  
+  .eform.reveal .eform-submit{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.45s opacity;
   }
 </style>
