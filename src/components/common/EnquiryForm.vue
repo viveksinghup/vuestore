@@ -246,7 +246,7 @@ export default {
       if(this.error == '' && this.submitClicked == false){
       this.submitClicked = true
           axios
-          .post('http://vikash.programsmagic.com/api/email', this.data)
+          .post('https://mavenfms.com/mail/index.php', this.data)
           .then(response => {
             console.log(response)
             this.$toast(response.message ?? 'Successfully submitted',{ type:'success'});
