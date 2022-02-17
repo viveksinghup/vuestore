@@ -322,58 +322,106 @@
           >
             <div class="flex space-x-5">
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo1.png" />
+                <img src="@/assets/images/byjus.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo3.png" />
+                <img src="@/assets/images/marvel.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo4.png" />
+                <img src="@/assets/images/nexus.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo5.png" />
+                <img src="@/assets/images/tsi.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo6.png" />
+                <img src="@/assets/images/logo1.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo22.png" />
+                <img src="@/assets/images/logo3.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo6.png" />
+                <img src="@/assets/images/logo4.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo5.png" />
+                <img src="@/assets/images/logo5.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo4.png" />
+                <img src="@/assets/images/logo6.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo3.png" />
+                <img src="@/assets/images/logo22.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo1.png" />
+                <img src="@/assets/images/byjus.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo22.png" />
+                <img src="@/assets/images/marvel.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo1.png" />
+                <img src="@/assets/images/nexus.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo3.png" />
+                <img src="@/assets/images/tsi.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo4.png" />
+                <img src="@/assets/images/logo6.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo5.png" />
+                <img src="@/assets/images/logo5.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo6.png" />
+                <img src="@/assets/images/logo4.png" class="max-h-65" />
               </div>
               <div class="w-52 flex-shrink-0">
-                <img src="@/assets/images/logo22.png" />
+                <img src="@/assets/images/logo3.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo1.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo22.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/byjus.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/marvel.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/nexus.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/tsi.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo1.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo3.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo4.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo5.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo6.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/logo22.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/byjus.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/marvel.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/nexus.png" class="max-h-65" />
+              </div>
+              <div class="w-52 flex-shrink-0">
+                <img src="@/assets/images/tsi.png" class="max-h-65" />
               </div>
             </div>
           </marquee>
@@ -493,6 +541,9 @@ export default {
 }
 .allcard .card:nth-child(4) .ctitle{
   padding-right: 110px;
+}
+.max-h-65{
+  max-height: 65px;
 }
 @media screen and (max-width: 800px) {
   .form-heading {

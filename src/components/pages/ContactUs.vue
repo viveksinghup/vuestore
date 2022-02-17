@@ -69,6 +69,13 @@
               Phone Number: +91 9100114610
             </p>
             <br />
+            <h2 class="text-xl font-semibold">Branch Office</h2>
+            <div class="h-2 md:w-16 text-center bg-yellow mt-4 mb-6"></div>
+            <p>
+              No 21, Ground Floor, Lakshmi Residency, Shivanchetty Garden Main
+              Road, Bangalore 560042.<br /><br /> Phone Number: +91 9100114611.
+            </p>
+            <br />
             <p>
               Email: <a href="mailto:info@mavenfms.com">info@mavenfms.com</a>
             </p>

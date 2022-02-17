@@ -63,7 +63,7 @@
         <div class="p-5 md:w-1/4">
           <div class="text-lg text-gray-500 font-semibold">Contact Us</div>
           <a class="my-3 block text-sm opacity-50" href="/#"
-            >Maven Facility Management Pvt. Ltd. <br /><br />
+            >Maven Facility Management Services Pvt. Ltd. <br /><br />
             Plot No 84 & 85, VK Towers, 2nd Floor, Kavuri Hills Ext., Near IDFC
             Bank, Guttala Begumpet, Madhapur, Hyderabad 500081 Ph : +91
             9100114610</a
@@ -77,7 +77,7 @@
   </div>
   <div class="bg-gray-100 px-4 py-5 bg-black text-white">
     <div class="grid grid-cols-3 text-xs md:text-sm gap-4 max-w-6xl m-auto">
-      <h4 class="text-left">©2021 Maven Facility Management Pvt. Ltd.</h4>
+      <h4 class="text-left">©2021 Maven Facility Management Services Pvt. Ltd.</h4>
       <!-- <h4 class="text-center">Disclaimer</h4> -->
       <div class="text-center">
         <router-link to="/tnc">Disclaimer</router-link>
