@@ -544,6 +544,7 @@ export default {
 }
 .max-h-65{
   max-height: 65px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
   .form-heading {
